@@ -3,5 +3,5 @@ desktop.ini
 .bundle
 .sass-cache
 Gemfile.lock
-_site
+# _site
 *.gem
