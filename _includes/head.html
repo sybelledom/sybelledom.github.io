@@ -41,24 +41,27 @@
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="{{ 'assets/images/favicon/apple-touch-icon.png' }}"
+    href="{{ 'assets/images/favicon/apple-touch-icon.png' | relative_url }}"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="32x32"
-    href="{{ 'assets/images/favicon/favicon-32x32.png' }}"
+    href="{{ 'assets/images/favicon/favicon-32x32.png' | relative_url }}"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
-    href="{{ 'assets/images/favicon/favicon-16x16.png' }}"
+    href="{{ 'assets/images/favicon/favicon-16x16.png' | relative_url }}"
   />
-  <link rel="manifest" href="{{ 'assets/images/favicon/site.webmanifest' }}" />
+  <link
+    rel="manifest"
+    href="{{ 'assets/images/favicon/site.webmanifest' | relative_url }}"
+  />
   <link
     rel="mask-icon"
-    href="{{ 'assets/images/favicon/safari-pinned-tab.svg' }}"
+    href="{{ 'assets/images/favicon/safari-pinned-tab.svg' | relative_url }}"
     color="#5bbad5"
   />
   <meta name="msapplication-TileColor" content="#da532c" />
@@ -67,12 +70,12 @@
     rel="canonical"
     href="{{ page.url | replace:'index.html','' | absolute_url }}"
   />
-  <link
+  <!-- <link
     rel="alternate"
     type="application/rss+xml"
     title="{{ site.title | escape }}"
     href="{{ '/feed.xml' | relative_url }}"
-  />
+  /> -->
   {% if jekyll.environment == 'production' and site.google_analytics %} {%
   include google-analytics.html %} {% endif %}
 </head>
