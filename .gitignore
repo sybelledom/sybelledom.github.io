@@ -1,0 +1,7 @@
+.DS_Store
+desktop.ini
+.bundle
+.sass-cache
+Gemfile.lock
+_site
+*.gem
