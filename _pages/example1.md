@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Buttons
-permalink: /Buttoms/
+title: Page 1
+permalink: /page 1/
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
 
 <div class="section">
-    <h5>Raised</h5> 
+    <h5>Raised</h5>
 
     <div class="row">
           <div class="col s12">
@@ -16,20 +16,22 @@ permalink: /Buttoms/
                 <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
           </div>
     </div>
+
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>Floating</h5> 
+    <h5>Floating</h5>
 
     <div class="row">
             <div class="col s12">
                 <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
             </div>
     </div>
+
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>Large</h5> 
+    <h5>Large</h5>
 
     <div class="row">
           <div class="col s12">
@@ -38,17 +40,19 @@ permalink: /Buttoms/
                 <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
           </div>
     </div>
+
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>Disabled</h5> 
+    <h5>Disabled</h5>
 
     <div class="row">
         <div class="col s12">
                 <a class="btn-large disabled">Button</a>
                 <a class="btn disabled">Button</a>
                 <a class="btn-flat disabled">Button</a>
-                <a class="btn-floating disabled"><i class="material-icons">add</i></a>      
+                <a class="btn-floating disabled"><i class="material-icons">add</i></a>
         </div>
     </div>
+
 </div>

@@ -1413,6 +1413,13 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 
 .header {
   height: 11.2rem;
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+}
+.header h1 {
+  margin: 0;
+  align-self: center;
 }
 .header .baseline {
   text-decoration: none;

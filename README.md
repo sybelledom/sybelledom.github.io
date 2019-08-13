@@ -1,16 +1,14 @@
 ---
 layout: page
-title: README
+title: README___
 permalink: /readme/
 ---
 
-## Jekyll Materialize Starter Template v0.1
+# sass
 
-\*A Site Starter Materialize Templates.
-
-The theme is a fork of the [minima][1]
-
-![minima theme preview](/screenshot.png)
+```bash
+sass --watch _sass/main.scss:_site/css/main.css
+```
 
 ## License
 

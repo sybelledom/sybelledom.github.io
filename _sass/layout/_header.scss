@@ -8,6 +8,14 @@
 
 .header {
   height: 11.2rem;
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+
+  h1 {
+    margin: 0;
+    align-self: center;
+  }
 
   .baseline {
     text-decoration: none;

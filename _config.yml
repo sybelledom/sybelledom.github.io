@@ -3,11 +3,13 @@ author: Panoramedia
 email: contact@domoti.fr
 description: > # this means to ignore newlines until "baseurl:"
   A Simple Static Site
+include: ['_pages']
 
 twitter_username: macrod68
 github_username: macrod68
 
-exclude: [_site/assets/, _sass]
+# exclude: ['README.md']
+exclude: [css, _sass, 'README.md']
 
 sass:
   # style: compressed :nested :compact :expanded :compressed
