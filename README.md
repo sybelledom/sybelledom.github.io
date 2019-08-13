@@ -46,3 +46,11 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
   - jekyll serve
   - Si toujours en erreur :
   - bundle exec jekyll serve
+
+# sass map
+
+### cli RUN
+
+- sass -I \_sass --watch \_sass/main.scss:\_site/css/main.css
+- - ekyll serve
+- @see https://www.praqma.com/stories/how-to-track-sass-files/
