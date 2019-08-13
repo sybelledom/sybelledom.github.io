@@ -8,8 +8,8 @@ include: ['_pages']
 twitter_username: macrod68
 github_username: macrod68
 
-# exclude: ['README.md']
-exclude: [css, _sass, 'README.md']
+exclude: ['README.md']
+# exclude: [css, _sass, 'README.md']
 
 sass:
   # style: compressed :nested :compact :expanded :compressed
