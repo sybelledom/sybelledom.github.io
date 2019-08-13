@@ -8,4 +8,9 @@
 
 .header {
   height: 11.2rem;
+
+  .baseline {
+    text-decoration: none;
+    font-size: $caption;
+  }
 }
