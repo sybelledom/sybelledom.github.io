@@ -7,9 +7,15 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: macrod68
 github_username: macrod68
 
+exclude: [css, _sass]
+
 sass:
-  style: compressed
-  # plugin
+  # style: compressed :nested :compact :expanded :compressed
+  # @see https://web-design-weekly.com/2014/06/15/different-sass-output-styles/
+  style: expanded
+  sass_dir: _sass
+  sourcemap: true
+# plugin
 # This will require each of these plugins automatically.
 # plugins: ['jekyll-lunr-js-search']
 # gems: ['jekyll-lunr-js-search']

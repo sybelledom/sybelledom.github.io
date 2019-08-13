@@ -17,22 +17,11 @@
     name="description"
     content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa..."
   />
-
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
   <link
     rel="stylesheet"
     type="text/css"
     media="screen,projection"
-    href="/assets/materialize.css"
-  />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    media="screen,projection"
-    href="/assets/main.css"
+    href="/css/main.css"
   />
   <link
     rel="apple-touch-icon"
@@ -78,15 +67,20 @@
 
   <body>
 
-    <nav class="light-blue lighten-1" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" class="brand-logo" href="/">
-      <img
+    <header class="header">
+  <h1 class="logo">
+    <a href="/"
+      ><img
         src="/assets/images/sybelle_logo.svg"
         alt=""
       />
+      <span class="baseline">Votre parenthèse beauté</span>
     </a>
+  </h1>
+</header>
 
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container">
      
 
     <ul class="right hide-on-med-and-down">
@@ -105,7 +99,7 @@
       </li>
          
       <li>
-        <a href="/css/">CSS</a>
+        <a href="/page_styles/">Styles</a>
       </li>
          
       <li>
@@ -119,7 +113,7 @@
       <li>
         <a href="/cgv/">CGV</a>
       </li>
-                    
+              
     </ul>
 
     <ul class="side-nav" id="nav-mobile">
@@ -136,7 +130,7 @@
       </li>
          
       <li>
-        <a href="/css/">CSS</a>
+        <a href="/page_styles/">Styles</a>
       </li>
          
       <li>
@@ -150,7 +144,7 @@
       <li>
         <a href="/cgv/">CGV</a>
       </li>
-                    
+              
     </ul>
 
     <a class="button-collapse" data-activates="nav-mobile" href="#">

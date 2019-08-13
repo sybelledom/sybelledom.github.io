@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//Grid
+$cols: 12 !default;
+
+/// Breakpoints
+// $small: 320px !default; // or 'em' if you prefer, of course
+// $medium: 768px !default;
+$small: 415px !default;
+$medium: 768px !default;
+$large: 1152px !default;
+
+/// ex. @include respond-to("medium-up") {...}
+$bp-aliases: (
+  "small": (
+    max-width: #{$small}
+  ),
+  "medium": (
+    max-width: #{$medium}
+  ),
+  "large": (
+    max-width: #{$large}
+  ),
+  "small-up": (
+    min-width: #{$small}
+  ),
+  "medium-up": (
+    min-width: #{$medium}
+  ),
+  "large-up": (
+    min-width: #{$large}
+  ),
+  "retina": (
+    min-resolution: 2dppx
+  )
+) !default;

@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all application colors.
+// -----------------------------------------------------------------------------
+
+////
+//// @group brand colors
+//// @author Alexandre BOCA
+//// @author Manuel De Vries
+//// @type Color
+////
+
+// adding color to reference in the components / atoms / color / import_colorSass.module.scss file
+
+/// brand color
+$primary-regular: #e64980 !default;
+$primary-medium: #ff6b95 !default;
+$primary-light: #f0c7d4 !default;
+$primary-gradient: url("#primary-gradient") !default;
+/// primary color
+$color-primary: #0275d8 !default;
+/// secondary
+$greys-steel: #333 !default;
+$greys-steel-light: #525252 !default;
+$greys-snow: #f2f2f2;
+$white: #fff;
+/// sucess color
+$color-success: #5cb85c !default;
+/// info color
+$color-info: #5bc0de !default;
+/// warning color
+$color-warning: #f0ad4e !default;
+/// danger color
+$color-danger: #d9534f !default;
+/// inverse color
+$color-inverse: #333 !default;
+/// gost color
+$color-ghost: transparent;
+/// muted color
+$color-muted: #e7e9ed !default;
+/// base color
+$color-base: #212529 !default;
+/// background color
+$background-base: #fff !default;
+
+/// base gray
+$light-gray: #999;
+$medium-gray: #666;

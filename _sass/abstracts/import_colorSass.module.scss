@@ -1,0 +1,9 @@
+@import "colors";
+
+:export {
+  primaryRegular: $primary-regular;
+  primaryRegularMedium: $primary-medium;
+  primaryRegularLight: $primary-light;
+  colorPrimary: $color-primary;
+  colorInfo: $color-info;
+}

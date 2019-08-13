@@ -1,9 +1,27 @@
 {
-  "spellright.language": [
-    "fr"
-  ],
-  "spellright.documentTypes": [
-    "latex",
-    "plaintext"
-  ]
+  "spellright.language": ["fr"],
+  "spellright.documentTypes": ["latex", "plaintext"],
+  // prend en compte .stylelintrc.json
+  "editor.formatOnSave": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.trailingComma": "none",
+  // "prettier.trailingComma": "es5",
+  "prettier.semi": true,
+  // prettier tslint
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "files.exclude": {
+    "src/components/address": true,
+    "src/components/alert": true,
+    "src/components/authentication": true,
+    "src/components/button": true,
+    "src/components/customer": true,
+    "src/components/loaders": true,
+    "src/components/newsletter": true,
+    "src/components/validators": true
+  }
 }

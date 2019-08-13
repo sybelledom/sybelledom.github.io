@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CSS
-permalink: /css/
+title: Styles
+permalink: /page_styles/
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>

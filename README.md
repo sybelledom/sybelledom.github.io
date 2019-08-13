@@ -28,3 +28,21 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
 
 - [docs](https://jekyllrb.com/docs/)
 - [docs](https://jekyllrb.com/docs/)
+
+# Run Jekyll (projet existant)
+
+## CLI
+
+- Run :
+  - jekyll serve
+  - bundle
+  - ça install les dépendances.
+  - jekyll serve
+  - si erreur exec :
+  - gem update --system
+  - relancer un :
+  - bundle
+  - puis un :
+  - jekyll serve
+  - Si toujours en erreur :
+  - bundle exec jekyll serve
