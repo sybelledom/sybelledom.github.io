@@ -45,6 +45,18 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
   - Si toujours en erreur :
   - bundle exec jekyll serve
 
+# SASS to SASSC
+
+```ruby
+gem "jekyll-sass-converter", :git =>
+"https://github.com/searls/jekyll-sassc-converter.git"
+```
+
+- then run CLI cmd :
+- bundle
+- if error run CLI cmd :
+- bundle update
+
 # sass map
 
 ### cli RUN
