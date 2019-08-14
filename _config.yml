@@ -12,7 +12,7 @@ url: '_site' # the base hostname & protocol for your site, e.g. http://example.c
 
 include: ['_pages']
 exclude: ['README.md']
-exclude: [css, _sass, 'README.md']
+# exclude: [css, _sass, 'README.md']
 
 sass:
   # style: compressed :nested :compact :expanded :compressed

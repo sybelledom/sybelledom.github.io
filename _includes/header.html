@@ -1,18 +1,23 @@
 <header class="header">
-  <h1 class="logo">
-    <a href="{{ '/' | relative_url }}"
-      ><img
-        src="{{ '/assets/images/sybelle_logo.svg' | relative_url }}"
-        alt=""
-      />
-      <span class="baseline">Votre parenthèse beauté</span>
-    </a>
-  </h1>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container">
+  <div class="header__topbar">
+    <ul>
+      <li><a href="">Besoin d’aide ? Contactez-nous !</a></li>
+    </ul>
+  </div>
+  <div class="header__site">
+    <h1 class="header__logo">
+      <a href="{{ '/' | relative_url }}"
+        ><img
+          src="{{ '/assets/images/sybelle_logo.svg' | relative_url }}"
+          alt=""
+        />
+        <span class="baseline">Votre parenthèse beauté</span>
+      </a>
+    </h1>
+    <nav class="header__nav" role="navigation">
       <ul class="right hide-on-med-and-down">
         {% for item in site.pages %} {% if item.url != '/assets/main.css' and
-        item.url != '/404.html' %}
+        item.url != '/404.html' and item.url != '/feed.xml' %}
         <li>
           <a href="{{ item.url | relative_url }}">
             {{ item.title }}
@@ -20,6 +25,6 @@
         </li>
         {%endif%} {%endfor%}
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
