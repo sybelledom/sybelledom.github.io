@@ -705,11 +705,6 @@ template {
   display: none;
 }
 
-/* ---------------------------------- */
-/* ==Grillade v6                      */
-/* ---------------------------------- */
-/* IMPORTANT : this is the KNACSS v6 old Grid System based on Flexbox */
-/* You only need it for projects on older browsers (IE11-) */
 /* START KNACSS */
 [class*=" grid-"],
 [class^="grid-"] {
@@ -735,22 +730,43 @@ template {
   min-height: 0;
 }
 @media (max-width: 415px) {
-  .grid.has-gutter > *,
-  .grid--reverse.has-gutter > * {
+  .grid.has-gutter,
+  .grid--reverse.has-gutter {
     margin-right: calc(0.4rem - 0.01px);
     margin-left: calc(0.4rem - 0.01px);
   }
 }
-@media (max-width: 768px) {
-  .grid.has-gutter > *,
-  .grid--reverse.has-gutter > * {
+@media (min-width: 415px) and (max-width: 768px) {
+  .grid.has-gutter,
+  .grid--reverse.has-gutter {
     margin-right: calc(0.8rem - 0.01px);
     margin-left: calc(0.8rem - 0.01px);
   }
 }
-@media (max-width: 1152px) {
-  .grid.has-gutter > *,
-  .grid--reverse.has-gutter > * {
+@media (min-width: 769px) {
+  .grid.has-gutter,
+  .grid--reverse.has-gutter {
+    margin-right: calc(0.6rem - 0.01px);
+    margin-left: calc(0.6rem - 0.01px);
+  }
+}
+@media (max-width: 415px) {
+  .grid.has-gutter-all > *,
+  .grid--reverse.has-gutter-all > * {
+    margin-right: calc(0.4rem - 0.01px);
+    margin-left: calc(0.4rem - 0.01px);
+  }
+}
+@media (min-width: 415px) and (max-width: 768px) {
+  .grid.has-gutter-all > *,
+  .grid--reverse.has-gutter-all > * {
+    margin-right: calc(0.8rem - 0.01px);
+    margin-left: calc(0.8rem - 0.01px);
+  }
+}
+@media (min-width: 769px) {
+  .grid.has-gutter-all > *,
+  .grid--reverse.has-gutter-all > * {
     margin-right: calc(0.6rem - 0.01px);
     margin-left: calc(0.6rem - 0.01px);
   }
@@ -1319,6 +1335,17 @@ body .container {
   padding: 0;
 }
 
+.card {
+  width: 100%;
+  background-color: #fff;
+}
+.card.is-rounded-sm {
+  border-radius: 4px;
+}
+.card.is-rounded-md {
+  border-radius: 8px;
+}
+
 /* Flexbox layout is KNACSS choice
 http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 */
@@ -1402,13 +1429,28 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   background: #d2691e;
 }
 
-.category-title {
-  margin-top: 56px;
+.justify-left {
+  justify-content: flex-start;
 }
 
-.headline_thumbs_group_title {
-  margin-top: 48px;
-  margin-bottom: 32px;
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-bottom {
+  align-items: flex-end;
 }
 
 .header {
