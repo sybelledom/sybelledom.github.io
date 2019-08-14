@@ -2,6 +2,6 @@
 desktop.ini
 .bundle
 .sass-cache
-Gemfile.lock
+# Gemfile.lock
 # _site
-*.gem
+# *.gem
