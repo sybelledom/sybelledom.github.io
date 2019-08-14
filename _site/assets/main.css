@@ -891,8 +891,8 @@ template {
     width: calc(100% / 1 - 0.01px);
   }
   [class*="-small-1"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-1"].has-gutter > * {
     width: calc(100% / 1 - 0.8rem - 0.01px);
@@ -904,8 +904,8 @@ template {
     width: calc(100% / 2 - 0.01px);
   }
   [class*="-small-2"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-2"].has-gutter > * {
     width: calc(100% / 2 - 0.8rem - 0.01px);
@@ -917,8 +917,8 @@ template {
     width: calc(100% / 3 - 0.01px);
   }
   [class*="-small-3"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-3"].has-gutter > * {
     width: calc(100% / 3 - 0.8rem - 0.01px);
@@ -930,8 +930,8 @@ template {
     width: calc(100% / 4 - 0.01px);
   }
   [class*="-small-4"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-4"].has-gutter > * {
     width: calc(100% / 4 - 0.8rem - 0.01px);
@@ -943,8 +943,8 @@ template {
     width: calc(100% / 5 - 0.01px);
   }
   [class*="-small-5"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-5"].has-gutter > * {
     width: calc(100% / 5 - 0.8rem - 0.01px);
@@ -956,8 +956,8 @@ template {
     width: calc(100% / 6 - 0.01px);
   }
   [class*="-small-6"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-6"].has-gutter > * {
     width: calc(100% / 6 - 0.8rem - 0.01px);
@@ -969,8 +969,8 @@ template {
     width: calc(100% / 7 - 0.01px);
   }
   [class*="-small-7"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-7"].has-gutter > * {
     width: calc(100% / 7 - 0.8rem - 0.01px);
@@ -982,8 +982,8 @@ template {
     width: calc(100% / 8 - 0.01px);
   }
   [class*="-small-8"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-8"].has-gutter > * {
     width: calc(100% / 8 - 0.8rem - 0.01px);

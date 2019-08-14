@@ -149,8 +149,8 @@ $grid-gutters: (
       }
       // fusion des marges du container
       &.has-gutter {
-        margin-right: -#{$gutter-sm} / 2; // marges ext
-        margin-left: -#{$gutter-sm} / 2;
+        margin-right: -$gutter-sm / 2; // marges ext
+        margin-left: -$gutter-sm / 2;
       }
 
       &.has-gutter > * {
