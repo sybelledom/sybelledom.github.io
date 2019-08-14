@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Page 1
-permalink: /page 1/
+title: La page 1 yolo!!!
+permalink: /page_1/
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
@@ -34,7 +34,7 @@ permalink: /page 1/
     <h5>Large</h5>
 
     <div class="row">
-          <div class="col s12">
+        <div class="col s12">
                 <a class="waves-effect waves-light btn-large">Button</a>
                 <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
                 <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>

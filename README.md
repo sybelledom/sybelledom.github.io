@@ -4,7 +4,19 @@ title: README___
 permalink: /readme/
 ---
 
-# sass
+## livereload
+
+- [Jekyll 3.7.0 Released](https://jekyllrb.com/news/2018/01/02/jekyll-3-7-0-released/)
+- Run cli cmd :
+  - jekyll serve --livereload
+- wait until cli prompt : “LiveReload: Browser connected”
+
+## Github-pages
+
+- Pour prévisualiser l'intégration pour afin de la valider
+- Branche to push to update github-pages
+
+# debug sass
 
 ```bash
 sass --watch _sass/main.scss:_site/css/main.css
@@ -44,11 +56,13 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
   - jekyll serve
   - Si toujours en erreur :
   - bundle exec jekyll serve
+  - solution ultime :
+  - bundle clean --force
 
 # sass map
 
 ### cli RUN
 
 - sass -I \_sass --watch \_sass/main.scss:\_site/css/main.css
-- - ekyll serve
+- jekyll serve
 - @see https://www.praqma.com/stories/how-to-track-sass-files/
