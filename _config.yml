@@ -11,7 +11,7 @@ baseurl: '' # the subpath of your site, e.g. /blog
 url: '_site' # the base hostname & protocol for your site, e.g. http://example.com
 
 include: ['_pages']
-# exclude: ['README.md']
+exclude: ['README.md']
 exclude: [css, _sass, 'README.md']
 
 sass:

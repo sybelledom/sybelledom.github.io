@@ -5,6 +5,32 @@
 // ------
 // LAYOUT
 // ------
+.logo {
+  flex: 0 0 auto;
+  align-self: center;
+  max-width: 18rem;
+  margin: 0;
+
+  a {
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    width: 22rem;
+    height: auto;
+  }
+
+  .baseline {
+    font-size: $body-medium;
+    color: $medium-gray;
+    text-align: center;
+  }
+}
 
 .header {
   height: 11.2rem;
@@ -17,8 +43,4 @@
     align-self: center;
   }
 
-  .baseline {
-    text-decoration: none;
-    font-size: $caption;
-  }
 }
