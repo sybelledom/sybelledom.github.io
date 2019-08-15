@@ -1,8 +1,8 @@
-/* ---------------------------------- */
-/* ==Grillade v6                      */
-/* ---------------------------------- */
-/* IMPORTANT : this is the KNACSS v6 old Grid System based on Flexbox */
-/* You only need it for projects on older browsers (IE11-) */
+// ----------------------------------
+// ==Grillade v6
+// ----------------------------------
+// IMPORTANT : this is the KNACSS v6 old Grid System based on Flexbox
+// You only need it for projects on older browsers (IE11-)
 
 // Responsive breakpoints variables
 
@@ -11,7 +11,8 @@
 
 // IEfixing, see
 // https://github.com/alsacreations/KNACSS/issues/133;
-$iefix: 0.01px;
+// $iefix: 0.01px;
+$iefix: 0px;
 
 // FIX à supp (dispo dans _var.scss)
 $tiny: 320px !default;
@@ -88,16 +89,37 @@ $grid-gutters: (
     min-height: 0;
   }
 
-  &.has-gutter > * {
+  &.has-gutter {
+    // Gestion de la grille responsive < 320px
     @media (max-width: $small) {
       margin-right: calc(#{$gutter-sm/2} - #{$iefix});
       margin-left: calc(#{$gutter-sm/2} - #{$iefix});
     }
-    @media (max-width: $medium) {
+    // Gestion de la grille responsive de 320px à 768px
+    @media (min-width: $small) and (max-width: $medium) {
       margin-right: calc(#{$gutter-md/2} - #{$iefix});
       margin-left: calc(#{$gutter-md/2} - #{$iefix});
     }
-    @media (max-width: $large) {
+    // Gestion de la grille responsive > 768px
+    @media (min-width: $medium + 1) {
+      margin-right: calc(#{$gutter-lg/2} - #{$iefix});
+      margin-left: calc(#{$gutter-lg/2} - #{$iefix});
+    }
+  }
+
+  &.has-gutter-all > * {
+    // Gestion de la grille responsive < 320px
+    @media (max-width: $small) {
+      margin-right: calc(#{$gutter-sm/2} - #{$iefix});
+      margin-left: calc(#{$gutter-sm/2} - #{$iefix});
+    }
+    // Gestion de la grille responsive de 320px à 768px
+    @media (min-width: $small) and (max-width: $medium) {
+      margin-right: calc(#{$gutter-md/2} - #{$iefix});
+      margin-left: calc(#{$gutter-md/2} - #{$iefix});
+    }
+    // Gestion de la grille responsive > 768px
+    @media (min-width: $medium + 1) {
       margin-right: calc(#{$gutter-lg/2} - #{$iefix});
       margin-left: calc(#{$gutter-lg/2} - #{$iefix});
     }
@@ -149,8 +171,8 @@ $grid-gutters: (
       }
       // fusion des marges du container
       &.has-gutter {
-        margin-right: -$gutter-sm / 2; // marges ext
-        margin-left: -$gutter-sm / 2;
+        margin-right: -#{$gutter-sm} / 2; // marges ext
+        margin-left: -#{$gutter-sm} / 2;
       }
 
       &.has-gutter > * {
@@ -186,9 +208,8 @@ $grid-gutters: (
 // sizing individual children
 // DECOMMENT
 
-@each $flow, $divider in ("full" "1"), ("one-half" "2"), ("one-third" "3"),
-  ("one-quarter" "4"), ("one-fifth" "5"), ("one-sixth" "6"),
-  ("two-thirds" "3 * 2"), ("three-quarters" "4 * 3"), ("five-sixths" "6 * 5") {
+@each $flow, $divider in ("full" "1"), ("one-half" "2"), ("one-third" "3"), ("one-quarter" "4"), ("one-fifth" "5"),
+  ("one-sixth" "6"), ("two-thirds" "3 * 2"), ("three-quarters" "4 * 3"), ("five-sixths" "6 * 5") {
   .#{$flow} {
     flex: 0 0 auto;
     width: calc(100% / #{$divider} - #{$iefix});
@@ -205,6 +226,11 @@ $grid-gutters: (
   }
   @media (min-width: $large) {
     .has-gutter > .#{$flow} {
+      width: calc(100% / #{$divider} - #{$gutter-lg} - #{$iefix});
+    }
+  }
+  @media (min-width: $large) {
+    .has-gutter-all > .#{$flow} {
       width: calc(100% / #{$divider} - #{$gutter-lg} - #{$iefix});
     }
   }

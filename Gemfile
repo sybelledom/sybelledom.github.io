@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 3.8.6"
 
 # add SASSC → SASS allows division on numbers and numbers variables
 # gem "jekyll-sass-converter", :git =>
