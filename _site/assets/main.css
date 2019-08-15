@@ -1547,10 +1547,14 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 
 .presentation-banner {
+  margin-top: 4rem;
   padding: 3rem 0 4rem 0;
   background-image: url("../assets/images/presentation.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.presentation-banner__txt {
+  padding-left: 28.8rem;
 }
 .presentation-banner__txt h1 {
   margin: 0;
@@ -1567,6 +1571,9 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   color: #444;
   font-size: 2rem;
   line-height: 3.2rem;
+}
+.presentation-banner__cover {
+  text-align: center;
 }
 .presentation-banner__cover img {
   width: 15.6rem;
