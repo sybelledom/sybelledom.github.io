@@ -5,6 +5,10 @@
 body {
   min-height: 100vh;
   background-color: #eee;
+  // TOFIX add container for footer margin auto
+  // rm dfl
+  display: flex;
+  flex-direction: column;
   /* Use container for the standard */
   .container-flat {
     width: 100%;
