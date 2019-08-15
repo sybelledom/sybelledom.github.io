@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid $primary-light;
   background-color: #fff;
 
   &__topbar {
@@ -75,6 +76,7 @@
         display: block;
         margin-right: 2rem;
         padding: 8px 16px;
+        color: $medium-gray;
         font-size: $body-medium;
         line-height: 1.5;
         border-radius: 2.4rem;

@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/searls/jekyll-sassc-converter.git
-  revision: 67fe1bd55dd898afe5457802ef1a11cd227d6d5d
-  specs:
-    jekyll-sass-converter (1.5.2)
-      sassc (~> 1.12)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,8 +27,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.12.1)
-      jekyll (>= 3.7, < 5.0)
+    jekyll-sass-converter (1.5.2)
+      sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -59,17 +52,12 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (1.12.1)
-      ffi (~> 1.9.6)
-      sass (>= 3.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jekyll (~> 3.8.5)
-  jekyll-feed (~> 0.6)
-  jekyll-sass-converter!
   tzinfo-data
 
 BUNDLED WITH

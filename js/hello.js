@@ -1,7 +1,7 @@
-console.log('hello you ❤️');
+console.log('hello you ❤️')
 
-document
-  .querySelectorAll('.header__nav a')
-  .map(i => i.classList.toggle('actif'));
+const navList = Array.from(document.querySelectorAll('.header__nav a'))
 
-document.querySelectorAll('.header__nav a')[0].classList.add('actif');
+navList[0].classList.toggle('actif')
+
+console.log(navList)

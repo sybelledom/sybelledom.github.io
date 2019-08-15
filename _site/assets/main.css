@@ -281,7 +281,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -717,7 +717,6 @@ template {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 [class*=" grid-"] > *,
 [class^="grid-"] > * {
   box-sizing: border-box;
@@ -729,14 +728,12 @@ template {
 .grid--reverse {
   display: flex;
 }
-
 .grid > *,
 .grid--reverse > * {
   flex: 1 1 0%;
   min-width: 0;
   min-height: 0;
 }
-
 @media (max-width: 415px) {
   .grid.has-gutter > *,
   .grid--reverse.has-gutter > * {
@@ -744,7 +741,6 @@ template {
     margin-left: calc(0.4rem - 0.01px);
   }
 }
-
 @media (max-width: 768px) {
   .grid.has-gutter > *,
   .grid--reverse.has-gutter > * {
@@ -752,7 +748,6 @@ template {
     margin-left: calc(0.8rem - 0.01px);
   }
 }
-
 @media (max-width: 1152px) {
   .grid.has-gutter > *,
   .grid--reverse.has-gutter > * {
@@ -770,6 +765,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-2"] > * {
     width: calc(100% / 2 - 0.01px);
   }
@@ -778,6 +774,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-3"] > * {
     width: calc(100% / 3 - 0.01px);
   }
@@ -786,6 +783,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-4"] > * {
     width: calc(100% / 4 - 0.01px);
   }
@@ -794,6 +792,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-5"] > * {
     width: calc(100% / 5 - 0.01px);
   }
@@ -802,6 +801,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-6"] > * {
     width: calc(100% / 6 - 0.01px);
   }
@@ -810,6 +810,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-7"] > * {
     width: calc(100% / 7 - 0.01px);
   }
@@ -818,6 +819,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-8"] > * {
     width: calc(100% / 8 - 0.01px);
   }
@@ -826,6 +828,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-9"] > * {
     width: calc(100% / 9 - 0.01px);
   }
@@ -834,6 +837,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-10"] > * {
     width: calc(100% / 10 - 0.01px);
   }
@@ -842,6 +846,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-11"] > * {
     width: calc(100% / 11 - 0.01px);
   }
@@ -850,6 +855,7 @@ template {
     margin-right: 0.6rem;
     margin-left: 0.6rem;
   }
+
   [class*="grid-12"] > * {
     width: calc(100% / 12 - 0.01px);
   }
@@ -859,7 +865,6 @@ template {
     margin-left: 0.6rem;
   }
 }
-
 .push {
   margin-left: auto !important;
 }
@@ -894,6 +899,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-2"] > * {
     width: calc(100% / 2 - 0.01px);
   }
@@ -906,6 +912,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-3"] > * {
     width: calc(100% / 3 - 0.01px);
   }
@@ -918,6 +925,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-4"] > * {
     width: calc(100% / 4 - 0.01px);
   }
@@ -930,6 +938,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-5"] > * {
     width: calc(100% / 5 - 0.01px);
   }
@@ -942,6 +951,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-6"] > * {
     width: calc(100% / 6 - 0.01px);
   }
@@ -954,6 +964,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-7"] > * {
     width: calc(100% / 7 - 0.01px);
   }
@@ -966,6 +977,7 @@ template {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
   }
+
   [class*="-small-8"] > * {
     width: calc(100% / 8 - 0.01px);
   }
@@ -979,7 +991,6 @@ template {
     margin-left: 0.4rem;
   }
 }
-
 @media (min-width: 414px) and (max-width: 768px) {
   [class*="-medium-1"] > * {
     width: calc(100% / 1 - 0.01px);
@@ -989,6 +1000,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-2"] > * {
     width: calc(100% / 2 - 0.01px);
   }
@@ -997,6 +1009,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-3"] > * {
     width: calc(100% / 3 - 0.01px);
   }
@@ -1005,6 +1018,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-4"] > * {
     width: calc(100% / 4 - 0.01px);
   }
@@ -1013,6 +1027,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-5"] > * {
     width: calc(100% / 5 - 0.01px);
   }
@@ -1021,6 +1036,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-6"] > * {
     width: calc(100% / 6 - 0.01px);
   }
@@ -1029,6 +1045,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-7"] > * {
     width: calc(100% / 7 - 0.01px);
   }
@@ -1037,6 +1054,7 @@ template {
     margin-right: 0.8rem;
     margin-left: 0.8rem;
   }
+
   [class*="-medium-8"] > * {
     width: calc(100% / 8 - 0.01px);
   }
@@ -1046,7 +1064,6 @@ template {
     margin-left: 0.8rem;
   }
 }
-
 .full {
   flex: 0 0 auto;
   width: calc(100% / 1 - 0.01px);
@@ -1057,19 +1074,16 @@ template {
     width: calc(100% / 1 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .full {
     width: calc(100% / 1 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .full {
     width: calc(100% / 1 - 1.2rem - 0.01px);
   }
 }
-
 .one-half {
   flex: 0 0 auto;
   width: calc(100% / 2 - 0.01px);
@@ -1080,19 +1094,16 @@ template {
     width: calc(100% / 2 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .one-half {
     width: calc(100% / 2 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .one-half {
     width: calc(100% / 2 - 1.2rem - 0.01px);
   }
 }
-
 .one-third {
   flex: 0 0 auto;
   width: calc(100% / 3 - 0.01px);
@@ -1103,19 +1114,16 @@ template {
     width: calc(100% / 3 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .one-third {
     width: calc(100% / 3 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .one-third {
     width: calc(100% / 3 - 1.2rem - 0.01px);
   }
 }
-
 .one-quarter {
   flex: 0 0 auto;
   width: calc(100% / 4 - 0.01px);
@@ -1126,19 +1134,16 @@ template {
     width: calc(100% / 4 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .one-quarter {
     width: calc(100% / 4 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .one-quarter {
     width: calc(100% / 4 - 1.2rem - 0.01px);
   }
 }
-
 .one-fifth {
   flex: 0 0 auto;
   width: calc(100% / 5 - 0.01px);
@@ -1149,19 +1154,16 @@ template {
     width: calc(100% / 5 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .one-fifth {
     width: calc(100% / 5 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .one-fifth {
     width: calc(100% / 5 - 1.2rem - 0.01px);
   }
 }
-
 .one-sixth {
   flex: 0 0 auto;
   width: calc(100% / 6 - 0.01px);
@@ -1172,19 +1174,16 @@ template {
     width: calc(100% / 6 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .one-sixth {
     width: calc(100% / 6 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .one-sixth {
     width: calc(100% / 6 - 1.2rem - 0.01px);
   }
 }
-
 .two-thirds {
   flex: 0 0 auto;
   width: calc(100% / 3 * 2 - 0.01px);
@@ -1195,19 +1194,16 @@ template {
     width: calc(100% / 3 * 2 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .two-thirds {
     width: calc(100% / 3 * 2 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .two-thirds {
     width: calc(100% / 3 * 2 - 1.2rem - 0.01px);
   }
 }
-
 .three-quarters {
   flex: 0 0 auto;
   width: calc(100% / 4 * 3 - 0.01px);
@@ -1218,19 +1214,16 @@ template {
     width: calc(100% / 4 * 3 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .three-quarters {
     width: calc(100% / 4 * 3 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .three-quarters {
     width: calc(100% / 4 * 3 - 1.2rem - 0.01px);
   }
 }
-
 .five-sixths {
   flex: 0 0 auto;
   width: calc(100% / 6 * 5 - 0.01px);
@@ -1241,19 +1234,16 @@ template {
     width: calc(100% / 6 * 5 - 0.8rem - 0.01px);
   }
 }
-
 @media (min-width: 768px) {
   .has-gutter > .five-sixths {
     width: calc(100% / 6 * 5 - 1.6rem - 0.01px);
   }
 }
-
 @media (min-width: 1152px) {
   .has-gutter > .five-sixths {
     width: calc(100% / 6 * 5 - 1.2rem - 0.01px);
   }
 }
-
 /* mode debug */
 .debug [class*="grid"] > * {
   margin-bottom: 1rem;
@@ -1307,7 +1297,6 @@ html {
 a {
   text-decoration: none;
 }
-
 a:hover, a:active, a:focus {
   text-decoration: underline;
 }
@@ -1320,12 +1309,10 @@ body {
   background-color: #eee;
   /* Use container for the standard */
 }
-
 body .container-flat {
   width: 100%;
   background-color: #fff;
 }
-
 body .container {
   max-width: 1152px;
   margin: auto;
@@ -1349,12 +1336,10 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .flex-row {
   flex-direction: row;
 }
-
 .flex-container--row.align-center,
 .flex-row.align-center {
   align-items: center;
 }
-
 .flex-container--row.justify-space-between,
 .flex-row.justify-space-between {
   justify-content: space-between;
@@ -1408,12 +1393,10 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   background: #ff69b4;
   color: #fff;
 }
-
 .debug [class*="flex-container"] > * + * {
   /* stylelint-disable-line */
   background: #ffa500;
 }
-
 .debug [class*="flex-container"] > * + * + * {
   /* stylelint-disable-line */
   background: #d2691e;
@@ -1434,9 +1417,9 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid #fff1f2;
   background-color: #fff;
 }
-
 .header__topbar {
   width: 100%;
   height: 3.2rem;
@@ -1445,71 +1428,60 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   background-image: linear-gradient(91deg, #fff0f0, #fff9f9);
   text-align: right;
 }
-
 .header__topbar ul {
   max-width: 115.2rem;
   margin: 0 auto;
 }
-
 .header__topbar a {
   font-size: 1.2rem;
   color: #333;
 }
-
 .header__site {
   display: flex;
   flex-basis: 115.2rem;
   height: 11.2rem;
   margin: 0 auto;
 }
-
 .header__logo {
   flex: 0 0 auto;
   align-self: center;
   width: 27.6rem;
   margin: 0;
 }
-
 .header__logo a {
   display: flex;
   flex-direction: column;
 }
-
 .header__logo a:hover {
   text-decoration: none;
 }
-
 .header__logo img {
   width: 22rem;
   height: auto;
 }
-
 .header__logo .baseline {
   font-size: 1.6rem;
   color: #666;
   text-align: left;
   text-indent: 0.4rem;
 }
-
 .header__nav {
   display: flex;
   align-items: center;
 }
-
 .header__nav ul {
   display: flex;
   flex-wrap: wrap;
 }
-
 .header__nav ul a {
   display: block;
   margin-right: 2rem;
   padding: 8px 16px;
+  color: #666;
   font-size: 1.6rem;
   line-height: 1.5;
   border-radius: 2.4rem;
 }
-
 .header__nav ul a:hover, .header__nav ul a.actif {
   color: #fff;
   background-color: #F55691;

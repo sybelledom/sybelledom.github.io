@@ -1,14 +1,14 @@
 title: Sybelle cosmetics
-author: Panoramedia
+author: Domoti
 email: contact@domoti.fr
 description: > # this means to ignore newlines until "baseurl:"
   A Simple Static Site
 
-twitter_username: macrod68
-github_username: macrod68
+twitter_username: domtwit
+github_username: domgit
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: '_site' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'http://www.sybelle.fr' # the base hostname & protocol for your site, e.g. http://example.com
 
 include: ['_pages']
 exclude: ['README.md']
