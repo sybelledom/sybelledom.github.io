@@ -209,7 +209,7 @@ $grid-gutters: (
 // DECOMMENT
 
 @each $flow, $divider in ("full" "1"), ("one-half" "2"), ("one-third" "3"), ("one-quarter" "4"), ("one-fifth" "5"),
-  ("one-sixth" "6"), ("two-thirds" "3 * 2"), ("three-quarters" "4 * 3"), ("five-sixths" "6 * 5") {
+  ("one-sixth" "6"), ("two-thirds" "3 * 2"), ("three-quarters" "4 * 3"), ("five-sixths" "6 * 5"), ("seven-twelfth" "7 * 12") {
   .#{$flow} {
     flex: 0 0 auto;
     width: calc(100% / #{$divider} - #{$iefix});

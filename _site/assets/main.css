@@ -1303,6 +1303,31 @@ template {
     width: calc(100% / 6 * 5 - 1.2rem - 0px);
   }
 }
+.seven-twelfth {
+  flex: 0 0 auto;
+  width: calc(100% / 7 * 12 - 0px);
+}
+
+@media (min-width: 320px) {
+  .has-gutter > .seven-twelfth {
+    width: calc(100% / 7 * 12 - 0.8rem - 0px);
+  }
+}
+@media (min-width: 768px) {
+  .has-gutter > .seven-twelfth {
+    width: calc(100% / 7 * 12 - 1.6rem - 0px);
+  }
+}
+@media (min-width: 1152px) {
+  .has-gutter > .seven-twelfth {
+    width: calc(100% / 7 * 12 - 1.2rem - 0px);
+  }
+}
+@media (min-width: 1152px) {
+  .has-gutter-all > .seven-twelfth {
+    width: calc(100% / 7 * 12 - 1.2rem - 0px);
+  }
+}
 /* mode debug */
 .debug [class*="grid"] > * {
   margin-bottom: 1rem;
@@ -1373,7 +1398,7 @@ body .container-flat {
   background-color: #fff;
 }
 body .container {
-  max-width: 1152px;
+  width: 1152px;
   margin: auto;
   padding: 0;
 }
@@ -1490,6 +1515,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .header__topbar ul {
   max-width: 115.2rem;
   margin: 0 auto;
+  padding: 0 0.6rem;
 }
 .header__topbar a {
   font-size: 1.2rem;
@@ -1500,6 +1526,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   flex-basis: 115.2rem;
   height: 11.2rem;
   margin: 0 auto;
+  padding: 0 0.6rem;
 }
 .header__logo {
   flex: 0 0 auto;
