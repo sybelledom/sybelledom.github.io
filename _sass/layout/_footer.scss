@@ -1,7 +1,71 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  background-color: #fff0f0;
+  background-image: linear-gradient(91deg, #fff0f0, #fff9f9);
 
-.footer__wrapper {
-  padding: $spacer-medium-plus;
+  &::before {
+    position: relative;
+    top: 0.8rem;
+    content: '';
+    display: block;
+    margin-top: 8px;
+    border-top: 1px solid $white;
+  }
+
+  &__zone1 {
+  width: 115.2rem;
+  margin: 0 auto;
+  padding: 2.4rem 0.6rem;
+    h3 {
+      margin-bottom: 1.6rem;
+      color: $primary-regular;
+      font-size: $body-medium;
+      font-weight: bold;
+    }
+    ul>li {
+      line-height: 2.4rem;
+      color: $greys-steel;
+      font-size: $body-small;
+      & > a {
+        color: $greys-steel;
+      }
+      & > img:first-child {
+        margin-right: 1.6rem;
+      }
+    }
+  }
+      &__contact li:first-child {
+        margin-bottom: 1.6rem;
+      }
+
+  &__logo {
+
+    margin: 0;
+
+      a {
+        display: block;
+        max-width: 22rem;
+        margin: 0 auto;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      img {
+        width: 22rem;
+        height: auto;
+      }
+
+      .baseline {
+        display: inline-block;
+        font-size: $body-medium;
+        color: $medium-gray;
+        text-align: left;
+        text-indent: 0.4rem;
+      }
+
+    }
+
 }
