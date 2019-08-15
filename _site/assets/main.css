@@ -2,8 +2,6 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1434,7 +1432,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .header__topbar a {
   font-size: 1.2rem;
-  color: #333;
+  color: #444;
 }
 .header__site {
   display: flex;
@@ -1485,4 +1483,33 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .header__nav ul a:hover, .header__nav ul a.actif {
   color: #fff;
   background-color: #F55691;
+}
+
+.presentation-banner {
+  margin: 0 0.6rem;
+  padding: 3rem 0 4rem 0;
+  background-image: url("../assets/images/presentation.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.presentation-banner__txt h1 {
+  margin: 0;
+  margin-bottom: 0.2rem;
+  color: #fff;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 4rem;
+}
+.presentation-banner__txt p {
+  margin: 0;
+  color: #444;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+.presentation-banner__cover img {
+  width: 15.6rem;
+  transform: rotate(6deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }

@@ -62,6 +62,8 @@ Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll
 
 - uninstall jekyll and dependencies run
 - gem uninstall jekyll
+- install
+- gem install -n /usr/local/bin jekyll
 
 # sass map
 
