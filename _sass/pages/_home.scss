@@ -40,17 +40,28 @@
 }
 
 .produits {
+  margin-top: 4rem;
   padding: 0 0.6rem;
 
   &__gamme {
-
     max-width: 66rem;
     margin-right: 1.2rem;
+    border: 1px solid pink;
+    border-radius: 0.8rem;
 
     &--hero {
+      display: block;
+      margin: 0 auto;
       width: 47.2rem;
       height: auto;
     }
+
+  }
+  &__title {
+    @extend .displayMedium;
+  }
+  &__sub-title {
+    @extend .heading;
   }
 
   &__compo {

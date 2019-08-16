@@ -1337,6 +1337,23 @@ template {
   color: #fff;
 }
 
+.displayMedium, .produits__title {
+  line-height: 4rem;
+  font-size: 3.6rem;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #F55691;
+}
+
+.heading, .produits__sub-title {
+  line-height: 3.2rem;
+  font-size: 2.4rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #444;
+}
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1705,13 +1722,18 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 
 .produits {
+  margin-top: 4rem;
   padding: 0 0.6rem;
 }
 .produits__gamme {
   max-width: 66rem;
   margin-right: 1.2rem;
+  border: 1px solid pink;
+  border-radius: 0.8rem;
 }
 .produits__gamme--hero {
+  display: block;
+  margin: 0 auto;
   width: 47.2rem;
   height: auto;
 }

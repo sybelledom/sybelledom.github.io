@@ -29,3 +29,19 @@ $heading: 2.4rem;
 $sub-heading: 1.3rem;
 // line-height
 $line-height-base: 1.6rem !default; //16px = 1.6rem
+
+.displayMedium {
+  line-height: 4rem;
+  font-size: $display-medium;
+  font-family: $font-family-headings;
+  font-style: italic;
+  font-weight: bold;
+  color: $primary-regular;
+}
+.heading {
+  line-height: 3.2rem;
+  font-size: $heading;
+  font-family: $font-family-base;
+  font-weight: bold;
+  color: $greys-steel-light;
+}
