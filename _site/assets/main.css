@@ -1337,7 +1337,7 @@ template {
   color: #fff;
 }
 
-.displayMedium, .produits__title {
+.displayMedium, .produits__title, .who-are-we__title {
   line-height: 4rem;
   font-size: 3.6rem;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -1346,7 +1346,7 @@ template {
   color: #F55691;
 }
 
-.heading, .produits__sub-title {
+.heading, .produits__sub-title, .produits__compo .produits__btn {
   line-height: 3.2rem;
   font-size: 2.4rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1354,7 +1354,14 @@ template {
   color: #444;
 }
 
-.displayMedium, .produits__title, .heading, .produits__sub-title {
+.bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p {
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #333;
+}
+
+.displayMedium, .produits__title, .who-are-we__title, .heading, .produits__sub-title, .produits__compo .produits__btn {
   margin: 0;
 }
 
@@ -1733,19 +1740,58 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   max-width: 66rem;
   margin-right: 1.2rem;
   border: 1px solid pink;
+  background-color: #fff;
   border-radius: 0.8rem;
 }
 .produits__gamme--hero {
   display: block;
   margin: 0 auto;
+  margin-top: 3.2rem;
   width: 47.2rem;
   height: auto;
 }
-.produits__title {
+.produits__gamme .produits__title {
   margin-top: 1.6rem;
 }
-.produits__sub-title {
+.produits__gamme .produits__text {
+  margin-top: 1.6rem;
+}
+.produits__gamme .produits__sub-title {
   margin-top: 0.8rem;
+}
+.produits__gamme .produits__title,
+.produits__gamme .produits__sub-title,
+.produits__gamme .produits__text {
+  padding-left: 8rem;
+  padding-right: 8.2rem;
+}
+.produits__bio, .produits__made-in {
+  display: flex;
+  margin-left: 9.6rem;
+}
+.produits__bio img, .produits__made-in img {
+  width: 8.4rem;
+  height: auto;
+}
+.produits__bio p, .produits__made-in p {
+  height: max-content;
+  align-self: center;
+  margin-left: 1.6rem;
+}
+.produits__bio {
+  margin-top: 4rem;
+}
+.produits__made-in {
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.produits__block {
+  height: 35.2rem;
+  padding-top: 3rem;
+  padding-left: 4.8rem;
+  padding-right: 4rem;
+  margin-top: 0.8rem;
+  background-image: linear-gradient(91deg, #fff0f0, #fff9f9);
 }
 .produits__compo {
   max-width: 46.8rem;
@@ -1753,4 +1799,66 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .produits__compo--hero {
   width: 46.8rem;
   height: auto;
+}
+.produits__compo .produits__sub-title {
+  margin-top: 2.4rem;
+}
+.produits__compo .produits__btn {
+  display: block;
+  width: 24.8rem;
+  height: 4.8rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  line-height: 4.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #E05479;
+}
+
+.who-are-we {
+  margin: 4rem 0;
+  background-image: linear-gradient(135deg, #FFF0F0 0%, #FFF9F9 100%);
+  border-radius: 8px;
+}
+.who-are-we__section1 {
+  display: flex;
+}
+.who-are-we__section1 .who-are-we__title {
+  margin-top: 2.40rem;
+}
+.who-are-we__section1 .who-are-we__text {
+  margin-top: 1.6rem;
+}
+.who-are-we__section1 img {
+  max-width: 46.8rem;
+  margin-top: 3.2rem;
+  margin-right: 3.2rem;
+}
+.who-are-we__section1 img + div {
+  max-width: 66rem;
+}
+.who-are-we__blocktext {
+  max-width: 66rem;
+}
+.who-are-we__section2 {
+  display: flex;
+  margin-top: 4rem;
+}
+.who-are-we__section2 p {
+  max-width: 66rem;
+  padding-top: 1.6rem;
+  padding-left: 2.4rem;
+  padding-right: 1.6rem;
+  margin-right: 1.2rem;
+  line-height: 3.2rem;
+}
+.who-are-we__section2 p > img {
+  display: block;
+  margin: 0 auto;
+  width: 31.2rem;
+  margin-top: 3rem;
+}
+.who-are-we__section2 img {
+  max-width: 46.8rem;
+  margin-bottom: 10.4rem;
 }

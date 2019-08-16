@@ -30,6 +30,7 @@ $sub-heading: 1.3rem;
 // line-height
 $line-height-base: 1.6rem !default; //16px = 1.6rem
 
+// use with @extend to mimic atomic design
 .displayMedium {
   line-height: 4rem;
   font-size: $display-medium;
@@ -44,6 +45,12 @@ $line-height-base: 1.6rem !default; //16px = 1.6rem
   font-family: $font-family-base;
   font-weight: bold;
   color: $greys-steel-light;
+}
+.bodyMedium {
+  line-height: 2.4rem;
+  font-size: $body-medium;
+  font-family: $font-family-base;
+  color: $greys-steel;
 }
 
 .displayMedium, .heading {
