@@ -6,7 +6,7 @@ permalink: /accueil/
 
 <div class="container">
   <section class="presentation-banner grid has-gutter-all">
-    <!-- <div class="presentation-banner__txt three-quarters"> -->
+    <!-- <s class="presentation-banner__txt three-quarters"> -->
     <div class="presentation-banner__txt three-quarters">
       <h1>Bonjour et bienvenue<br />sur notre site Sybelle !</h1>
       <p>
@@ -19,30 +19,105 @@ permalink: /accueil/
       <img src="{{ '/assets/images/CouvSybelle.jpg' | relative_url }}" alt="" />
     </div>
   </section>
-  <section class="produits">
-    <h1>Nos produits</h1>
-    <h2>Une gamme essentielle pour se sentir bien tous les jours !</h2>
-    <p>
-      Soins, crèmes, maquillage, accessoires... Nous avons sélectionné avec la
-      plus grande attention des produits de qualité supérieure, certes... Et
-      surtout, nous les avons nous-mêmes testés ! Si nous vous les proposons
-      ici, c’est que, au-delà de la conformité aux tests cosmétiques passés haut
-      la main, nous sommes convaincues de leur efficacité : vous pouvez les
-      commander les yeux fermés.
-    </p>
-    <div class="logo-produits">
-      <div class="bio">
-        <img src="logo-bio.png" alt="" />
-        <p>
-          Une gamme bio : Reconnaissez facilement les produits certifiés bio !
-        </p>
+
+  <section class="produits grid">
+    <div class="produits__gamme">
+      <img
+        class="produits__gamme--hero"
+        src="{{ '/assets/images/home_produits.jpg' | relative_url }}"
+        alt=""
+      />
+      <h1>Nos produits</h1>
+      <h2>Une gamme essentielle pour se sentir bien tous les jours !</h2>
+      <p>
+        Soins, crèmes, maquillage, accessoires... Nous avons sélectionné avec la
+        plus grande attention des produits de qualité supérieure, certes... Et
+        surtout, nous les avons nous-mêmes testés ! Si nous vous les proposons
+        ici, c’est que, au-delà de la conformité aux tests cosmétiques passés
+        haut la main, nous sommes convaincues de leur efficacité : vous pouvez
+        les commander les yeux fermés.
+      </p>
+      <div class="logo-produits">
+        <div class="bio">
+          <img
+            src="{{ '/assets/images/home_logo-bio.jpg' | relative_url }}"
+            alt=""
+          />
+          <p>
+            Une gamme bio : Reconnaissez facilement les produits certifiés bio !
+          </p>
+        </div>
+        <div class="made-in">
+          <img
+            src="{{ '/assets/images/home_made-in-France.jpg' | relative_url }}"
+            alt=""
+          />
+          <p>
+            Des produits fabriqués en France
+          </p>
+        </div>
       </div>
-      <div class="made-in">
-        <img src="logo-made-in-fr.png" alt="" />
-        <p>
-          Des produits fabriqués en France
-        </p>
-      </div>
+    </div>
+
+    <div class="produits__compo">
+      <img
+        class="produits__compo--hero"
+        src="{{ '/assets/images/home_produits-compo.jpg' | relative_url }}"
+        alt=""
+      />
+      <h1>La composition de nos produits</h1>
+      <h2>
+        Un outil simple pour retrouver la liste de tous les composants de nos
+        produits.
+      </h2>
+      <a href="{{ './ingredients' | relative_url }}">> J'y vais</a>
+    </div>
+  </section>
+
+  <section class="who-are-we">
+    <div class="who-are-we__section1">
+      <img
+        src="{{ '/assets/images/home_who-are-we.jpg' | relative_url }}"
+        alt=""
+      />
+      <h1>Qui sommes-nous ?</h1>
+      <p>
+        Chère Cliente, Cher Client, Nous avons beaucoup de plaisir à vous
+        accueillir dans notre univers dédié à la beauté ! Amies depuis toujours,
+        le nom de notre enseigne beauté “Sybelle” s’est imposé comme une
+        évidence : l’association de nos 3 prénoms, parce que chacune d’entre
+        nous est à l’origine de cette idée ! • Sylvie Dartois - ex-mannequin •
+        Béatrice Lamblin - esthéticienne • Carole Lefèvre - coiffeuse.
+      </p>
+    </div>
+    <div class="who-are-we__section2">
+      <p>
+        Toutes les 3 passionnées par la cosmétique, nous sommes parties d’un
+        constat évident : il est difficile de savoir bien prendre soin de soi,
+        de sa peau et de son corps. Bien vieillir, mieux vieillir, est un
+        véritable art de vivre que nous cultivons toutes, mais laborieux
+        d’accès, avec un marché des cosmétiques qui prolifère de produits peu
+        adaptés aux femmes comme nous. En respectant au mieux vos besoins
+        spécifiques nous avons créé notre enseigne beauté. Nous sélectionnons
+        avec le plus grand soin les bons produits cosmétiques, (approuvés
+        scientifiquement après tests en laboratoires), ceux qui vous
+        ressemblent, mais surtout ceux qui seront efficaces. Vous y trouverez
+        une sélection de bonnes idées, conseils et astuces pour les soins du
+        visage et du corps, le maquillage, l’hydratation... et aussi une gamme
+        dédiée aux messieurs ! Nous vous souhaitons de belles découvertes.
+        Retrouvez-nous au fil des pages de votre catalogue, nous vous guidons
+        avec nos secrets de beauté !
+        <img
+          src="{{
+            '/assets/images/home_who-are-we-signatures.png' | relative_url
+          }}"
+          alt="Signatures des ambassadrices Sybelle: Sylvie, Béatrice, Carole"
+        />
+      </p>
+      <img
+        src="{{ '/assets/images/home_who-are-we-gift.jpg' | relative_url }}"
+        alt=""
+      />
     </div>
   </section>
 </div>

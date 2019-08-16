@@ -1671,7 +1671,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .presentation-banner {
   margin-top: 4rem;
   padding: 3rem 0 4rem 0;
-  background-image: url("../assets/images/presentation.jpg");
+  background-image: url("../assets/images/home_presentation.jpg");
   background-repeat: no-repeat;
   background-size: 1140px;
   background-position: 6px;
@@ -1702,4 +1702,23 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   width: 15.6rem;
   transform: rotate(6deg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.produits {
+  padding: 0 0.6rem;
+}
+.produits__gamme {
+  max-width: 66rem;
+  margin-right: 1.2rem;
+}
+.produits__gamme--hero {
+  width: 47.2rem;
+  height: auto;
+}
+.produits__compo {
+  max-width: 46.8rem;
+}
+.produits__compo--hero {
+  width: 46.8rem;
+  height: auto;
 }

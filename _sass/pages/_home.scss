@@ -1,3 +1,71 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.presentation-banner {
+  margin-top: 4rem;
+  padding: 3rem 0 4rem 0;
+  background-image: url('../assets/images/home_presentation.jpg');
+  background-repeat: no-repeat;
+  background-size: 1140px;
+  background-position: 6px;
+  &__txt {
+    padding-left: 28.8rem;
+    h1 {
+      margin: 0;
+      margin-bottom: 0.2rem;
+      color: $white;
+      font-family: $font-family-headings;
+      font-size: $display-medium;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 4rem;
+    }
+    p {
+      margin: 0;
+      color: $greys-steel;
+      font-size: $body-large;
+      line-height: 3.2rem;
+    }
+  }
+  &__cover {
+    text-align: center;
+    img {
+      width: 15.6rem;
+      transform: rotate(6deg);
+      box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    }
+
+  }
+}
+
+.produits {
+  padding: 0 0.6rem;
+
+  &__gamme {
+
+    max-width: 66rem;
+    margin-right: 1.2rem;
+
+    &--hero {
+      width: 47.2rem;
+      height: auto;
+    }
+  }
+
+  &__compo {
+    max-width: 46.8rem;
+    &--hero {
+      width: 46.8rem;
+      height: auto;
+    }
+  }
+}
+
+.who-are-we {
+  &__section1{
+  }
+  &__section2{
+
+  }
+}
