@@ -1354,6 +1354,10 @@ template {
   color: #444;
 }
 
+.displayMedium, .produits__title, .heading, .produits__sub-title {
+  margin: 0;
+}
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1736,6 +1740,12 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   margin: 0 auto;
   width: 47.2rem;
   height: auto;
+}
+.produits__title {
+  margin-top: 1.6rem;
+}
+.produits__sub-title {
+  margin-top: 0.8rem;
 }
 .produits__compo {
   max-width: 46.8rem;

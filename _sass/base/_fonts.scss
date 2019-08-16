@@ -45,3 +45,7 @@ $line-height-base: 1.6rem !default; //16px = 1.6rem
   font-weight: bold;
   color: $greys-steel-light;
 }
+
+.displayMedium, .heading {
+  margin: 0;
+}
