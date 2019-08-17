@@ -1,0 +1,13 @@
+{
+  "bottom_link": {
+    "mentions": {
+      "text": "Mentions légales",
+      "path": "/mentions/"
+    },
+    "cgv": {
+      "text": "Conditions générales de vente",
+      "path": "/cgv/"
+    }
+  },
+  "num_sva": "0 892 065 065"
+}

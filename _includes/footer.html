@@ -17,8 +17,9 @@
             src="{{ '/assets/images/icon-phone.svg' | relative_url }}"
             alt=""
           /><img
+            id="sva"
             src="{{ '/assets/images/numSVA.svg' | relative_url }}"
-            alt=""
+            alt="{{ site.data.footer_bottom.num_sva }} "
           />
         </li>
         <li>
@@ -32,26 +33,31 @@
     <div class="footer__partenaires">
       <h3>Partenaires</h3>
       <ul>
+        {% for elt in site.data.footer %}
         <li>
-          <a href="/">Temps L - Accessoires astucieux Cuisine et Maison</a>
+          {%- comment -%}absolute link @show footer.json{%- endcomment -%}
+          <a href="{{ elt.link }}" target="_blank">
+            {{ elt.text }}
+          </a>
         </li>
-        <li><a href="/">Marianne Mélodie - Chansons françaises retro</a></li>
-        <li>
-          <a href="/">L’Atelier de Lucie - Point de croix canevas tricot</a>
-        </li>
-        <li>
-          <a href="/">Confort & Vie - Objets pratiques pour les seniors</a>
-        </li>
-        <li><a href="/">Chien Chat et Compagnie - Animalerie</a></li>
-        <li><a href="/">Idées Homme - Idées Cadeaux</a></li>
+        {% endfor%}
       </ul>
     </div>
   </div>
 
+  {% assign it = site.data.footer_bottom %}
   <div class="footer__copyright">
     <ul>
-      <li><a href="/">Mentions légales</a></li>
-      <li><a href="/">Conditions générales de vente</a></li>
+      <li>
+        <a href="{{ it.bottom_link.mentions.path | relative_url }}">{{
+          it.bottom_link.mentions.text
+        }}</a>
+      </li>
+      <li>
+        <a href="{{ it.bottom_link.cgv.path | relative_url }} ">{{
+          it.bottom_link.cgv.text
+        }}</a>
+      </li>
       <li>Copyright © 2019 - Domoti.</li>
     </ul>
   </div>

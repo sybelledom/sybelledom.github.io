@@ -1354,7 +1354,8 @@ template {
   color: #444;
 }
 
-.bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p {
+.bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p, .ingredients-array th, .ingredients-array td:nth-child(0n+1),
+.ingredients-array td:nth-child(0n+2) {
   line-height: 2.4rem;
   font-size: 1.6rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1861,4 +1862,40 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .who-are-we__section2 img {
   max-width: 46.8rem;
   margin-bottom: 10.4rem;
+}
+
+.ingredients-array table {
+  border-collapse: collapse;
+}
+.ingredients-array th {
+  height: 4rem;
+  vertical-align: middle;
+  font-weight: bold;
+  border: 1px solid #ebebeb;
+  border-bottom: 0;
+}
+.ingredients-array th:nth-child(0n+1),
+.ingredients-array th:nth-child(0n+2) {
+  width: 19.2rem;
+}
+.ingredients-array th:nth-child(0n+3) {
+  padding-left: 1.6rem;
+  text-align: left;
+}
+.ingredients-array tr:nth-child(even) td {
+  background-color: #fff8f9;
+}
+.ingredients-array td {
+  line-height: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1.6rem;
+  vertical-align: top;
+}
+.ingredients-array td:last-child {
+  padding-top: 1rem;
+}
+.ingredients-array td:nth-child(0n+1),
+.ingredients-array td:nth-child(0n+2) {
+  line-height: 2rem;
+  text-align: center;
 }

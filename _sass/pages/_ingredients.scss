@@ -1,0 +1,43 @@
+.ingredients-array {
+  table {
+    border-collapse: collapse;
+  }
+  th {
+    height: 4rem;
+    vertical-align: middle;
+    @extend .bodyMedium;
+    font-weight: bold;
+    border: 1px solid $greys-snow;
+    border-bottom: 0;
+  }
+  th:nth-child(0n+1),
+  th:nth-child(0n+2) {
+    width: 19.2rem;
+  }
+  th:nth-child(0n+3) {
+    padding-left: 1.6rem;
+    text-align: left;
+  }
+
+  tr:nth-child(even) td {
+    background-color: $primary-medium;
+  }
+
+  td {
+    line-height: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1.6rem;
+    vertical-align: top;
+
+    &:last-child {
+      padding-top: 1rem;
+    }
+  }
+
+  td:nth-child(0n+1),
+  td:nth-child(0n+2) {
+    @extend .bodyMedium;
+    line-height: 2rem;
+    text-align: center;
+  }
+}

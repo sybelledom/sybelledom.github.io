@@ -6,8 +6,13 @@ permalink: /ingredients/
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
 
-<div class="section">
-  <table>
+<div class="container">
+  <table class="ingredients-array">
+    <tr>
+      <th>Référence produit</th>
+      <th>Libellé produit</th>
+      <th>Ingrédients / Composition</th>
+    </tr>
     {% for elt in site.data.ingredients %}
     <tr>
       <td>
