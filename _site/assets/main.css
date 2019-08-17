@@ -1838,6 +1838,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .who-are-we__blocktext {
   max-width: 66rem;
+  padding-right: 1.6rem;
 }
 .who-are-we__section2 {
   display: flex;

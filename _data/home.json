@@ -2,7 +2,38 @@
   "presentationBanner": {
     "title": "Bonjour et bienvenue<br />sur notre site Sybelle !",
     "text": "Notre site est en train de se faire une beauté pour vous satisfaire au maximum mais vous pouvez dès à présent retrouver tous les ingrédients de nos produits vendus sur notre catalogue !",
-    "cat": "/assets/images/CouvSybelle_0919.jpg",
-    "cat_date": "0919"
+    "cat_date": "0919",
+    "alt_cat": "image de la couverture du ctalogue de septembre 2019."
+  },
+  "produits": {
+    "gamme": {
+      "title": "Nos produits",
+      "subTitle": "Une gamme essentielle pour se<br /> sentir bien tous les jours !",
+      "text": "Soins, crèmes, maquillage, accessoires... Nous avons sélectionné avec la plus grande attention des produits de qualité supérieure, certes... Et surtout, nous les avons nous-mêmes testés ! Si nous vous les proposons ici, c’est que, au-delà de la conformité aux tests cosmétiques passés haut la main, nous sommes convaincues de leur efficacité : vous pouvez les commander les yeux fermés.",
+      "bio": "<b>Une gamme bio :</b><br /> Reconnaissez facilement les produits certifiés bio ! ",
+      "madeInFrance": "Des produits fabriqués en France",
+      "alt_imgProduits": "Images de produits de la gamme Sybelle",
+      "alt_bio": "logo bio",
+      "alt_madeinfrance": "logo fabriqué en France",
+      "alt_img_compo": "Une personne sent son poigné sur lequel elle a appliqué de la crème Sybelle."
+    },
+    "compo": {
+      "title": "La composition de nos produits",
+      "subTitle": "Un outil simple pour retrouver la liste de tous les composants de nos produits. ",
+      "btn": "> J'y vais"
+    },
+    "whoAreWe": {
+      "title": "Qui sommes-nous ?",
+      "text": "Chère Cliente, Cher Client, Nous avons beaucoup de plaisir à vous accueillir dans notre univers dédié à la beauté !<br /> <br /> Amies depuis toujours, le nom de notre enseigne beauté “Sybelle” s’est imposé comme une évidence : l’association de nos 3 prénoms, parce que chacune d’entre nous est à l’origine de cette idée !<br />",
+      "list": [
+        "<b>Sylvie Dartois</b> - ex-mannequin",
+        "<b>Béatrice Lamblin</b> - esthéticienne",
+        "<b>Carole Lefèvre</b> - coiffeuse."
+      ],
+      "text_2": "Toutes les 3 passionnées par la cosmétique, nous sommes parties d’un constat évident : il est difficile de savoir bien prendre soin de soi, de sa peau et de son corps. Bien vieillir, mieux vieillir, est un véritable art de vivre que nous cultivons toutes, mais laborieux d’accès, avec un marché des cosmétiques qui prolifère de produits peu adaptés aux femmes comme nous.<br /> En respectant au mieux vos besoins spécifiques nous avons créé notre enseigne beauté. Nous sélectionnons avec le plus grand soin les <b>bons produits cosmétiques,</b> (approuvés scientifiquement après tests en laboratoires), ceux qui vous ressemblent, mais surtout ceux qui seront efficaces.<br /> Vous y trouverez une sélection de <b>bonnes idées</b>, <b>conseils</b> et <b>astuces</b> pour les soins du visage et du corps, le maquillage, l’hydratation... et aussi une gamme dédiée aux messieurs !<br /> Nous vous souhaitons de belles découvertes. Retrouvez-nous au fil des pages de votre catalogue, nous vous guidons avec <b>nos secrets de beauté !</b>",
+      "txt_alt_ambassadrices": "Les ambassadrices Sybelle: Sylvie, Béatrice, Carole",
+      "txt_alt_signatures": "images des signatures de Sylvie, Béatrice et Carole",
+      "txt_alt_coffret": "image representant un coffret Sybelle"
+    }
   }
 }
