@@ -14,7 +14,7 @@ permalink: /ingredients/
       <th>Ingrédients / Composition</th>
     </tr>
     {% for elt in site.data.ingredients %}
-    <tr>
+    <tr id="_{{ elt.ref }}">
       <td>
         {{ elt.ref }}
       </td>

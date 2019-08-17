@@ -1,3 +1,8 @@
+#_1012103, #_1012103 > td {
+  border: solid 3px whitesmoke;
+  background-color: #eee !important;
+}
+
 .ingredients-array {
   table {
     border-collapse: collapse;
@@ -31,6 +36,7 @@
 
     &:last-child {
       padding-top: 1rem;
+      padding-left: 0.8rem;
     }
   }
 
@@ -39,5 +45,9 @@
     @extend .bodyMedium;
     line-height: 2rem;
     text-align: center;
+  }
+  td,
+  th {
+    color: $greys-steel-light;
   }
 }

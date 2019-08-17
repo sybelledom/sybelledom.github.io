@@ -1359,7 +1359,6 @@ template {
   line-height: 2.4rem;
   font-size: 1.6rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #333;
 }
 
 .displayMedium, .produits__title, .who-are-we__title, .heading, .produits__sub-title, .produits__compo .produits__btn {
@@ -1864,6 +1863,11 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   margin-bottom: 10.4rem;
 }
 
+#_1012103, #_1012103 > td {
+  border: solid 3px whitesmoke;
+  background-color: #eee !important;
+}
+
 .ingredients-array table {
   border-collapse: collapse;
 }
@@ -1893,9 +1897,14 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .ingredients-array td:last-child {
   padding-top: 1rem;
+  padding-left: 0.8rem;
 }
 .ingredients-array td:nth-child(0n+1),
 .ingredients-array td:nth-child(0n+2) {
   line-height: 2rem;
   text-align: center;
+}
+.ingredients-array td,
+.ingredients-array th {
+  color: #444;
 }
