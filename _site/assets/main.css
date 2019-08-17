@@ -1419,12 +1419,11 @@ a:hover, a:active, a:focus {
 body {
   min-height: 100vh;
   background-color: #eee;
-  display: flex;
-  flex-direction: column;
   /* Use container for the standard */
 }
 body .container-flat {
   width: 100%;
+  overflow: hidden;
   background-color: #fff;
 }
 body .container {

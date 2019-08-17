@@ -7,5 +7,19 @@ permalink: /ingredients/
 <h1 class="page-title">{{ page.title | escape }}</h1>
 
 <div class="section">
-  yolo
+  <table>
+    {% for elt in site.data.ingredients %}
+    <tr>
+      <td>
+        {{ elt.ref }}
+      </td>
+      <td>
+        {{ elt.lib }}
+      </td>
+      <td>
+        {{ elt.ingredients }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
 </div>

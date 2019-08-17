@@ -1,6 +1,10 @@
 {
-  "spellright.language": ["fr"],
-  "spellright.documentTypes": ["latex", "plaintext"],
+  "spellright.language": [
+    "fr"
+  ],
+  "spellright.documentTypes": [
+    "latex"
+  ],
   // prend en compte .stylelintrc.json
   "editor.formatOnSave": true,
   "prettier.stylelintIntegration": true,
