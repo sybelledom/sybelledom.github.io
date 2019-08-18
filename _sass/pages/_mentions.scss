@@ -4,10 +4,35 @@
   padding: 0 0.6rem;
 }
 
+.legal {
+  &__title {
+    margin-top: 1.6rem;
+    @extend .displayMedium;
+    text-align: center;
+    color: $primary-dark;
+  }
+
+  &__subTitle {
+    height: 4rem;
+    margin-top: 3.2rem;
+    padding-left: 3.2rem;
+    @extend .bodyLarge;
+    font-weight: bold;
+    line-height: 4rem;
+    color: $white;
+    background-image: linear-gradient(to left, #ffffff, #ba8bcb 40%);
+  }
+
+  &__text {
+    @extend .bodyLarge;
+    line-height: 3.2rem;
+  }
+}
 
 .presentation-banner {
   margin-top: 4rem;
   padding: 3rem 0 4rem 0;
+  background-image: url('../assets/images/presentation.jpg');
   background-repeat: no-repeat;
   background-size: 1140px;
   background-position: 6px;
@@ -17,10 +42,12 @@
       margin: 0;
       margin-bottom: 0.2rem;
       color: $white;
-      font-family: $font-family-headings;
-      font-size: $display-medium;
-      font-weight: bold;
-      font-style: italic;
+      // font-family: $font-family-headings;
+      // font-size: $display-medium;
+      // font-weight: bold;
+      // font-style: italic;
+      // === bellow
+      @extend .displayMedium;
       line-height: 4rem;
     }
     p {

@@ -4,11 +4,16 @@ title: Mentions
 permalink: /mentions/
 ---
 
-<h1 class="title">{{ site.data.mentionsRw[0].title }}</h1>
+{%-comment-%} main class=container @show _layout/page_legal is mentions & CGV
+template. Starts the for loop at a specific index to ignore title in loop @see
+https://help.shopify.com/en/themes/liquid/tags/iteration-tags#offset
+{%-endcomment-%}
 
-{%- for item in site.data.mentionsRw -%}
-<h2>{{ item.subTitle }}</h2>
-<p>
+<h1 class="legal__title">{{ site.data.mentions[0].title }}</h1>
+
+{%- for item in site.data.mentions offset:1 -%}
+<h2 class="legal__subTitle">{{ item.subTitle }}</h2>
+<p class="legal__text">
   {{ item.content }}
 </p>
 {%- endfor -%}

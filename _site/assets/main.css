@@ -1337,7 +1337,7 @@ template {
   color: #fff;
 }
 
-.displayMedium, .presentation-banner__txt h1, .produits__title, .who-are-we__title {
+.displayMedium, .presentation-banner__txt h1, .produits__title, .who-are-we__title, .legal__title {
   line-height: 4rem;
   font-size: 3.6rem;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -1354,6 +1354,12 @@ template {
   color: #444;
 }
 
+.bodyLarge, .legal__subTitle, .legal__text {
+  line-height: 2.4rem;
+  font-size: 2rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p, .ingredients-array th, .ingredients-array td:nth-child(0n+1),
 .ingredients-array td:nth-child(0n+2) {
   line-height: 2.4rem;
@@ -1361,7 +1367,22 @@ template {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.displayMedium, .presentation-banner__txt h1, .produits__title, .who-are-we__title, .heading, .produits__sub-title, .produits__compo .produits__btn {
+.displayMedium, .presentation-banner__txt h1, .produits__title, .who-are-we__title, .legal__title,
+.heading,
+.produits__sub-title,
+.produits__compo .produits__btn,
+.bodyLarge,
+.legal__subTitle,
+.legal__text,
+.bodyMedium,
+.produits__text,
+.produits__bio p,
+.produits__made-in p,
+.who-are-we__text,
+.who-are-we__section2 p,
+.ingredients-array th,
+.ingredients-array td:nth-child(0n+1),
+.ingredients-array td:nth-child(0n+2) {
   margin: 0;
 }
 
@@ -1810,7 +1831,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   line-height: 4.8rem;
   text-align: center;
   color: #fff;
-  background-color: #E05479;
+  background-color: #dd0065;
 }
 
 .who-are-we {
@@ -1914,9 +1935,28 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   padding: 0 0.6rem;
 }
 
+.legal__title {
+  margin-top: 1.6rem;
+  text-align: center;
+  color: #dd0065;
+}
+.legal__subTitle {
+  height: 4rem;
+  margin-top: 3.2rem;
+  padding-left: 3.2rem;
+  font-weight: bold;
+  line-height: 4rem;
+  color: #fff;
+  background-image: linear-gradient(to left, #ffffff, #ba8bcb 40%);
+}
+.legal__text {
+  line-height: 3.2rem;
+}
+
 .presentation-banner {
   margin-top: 4rem;
   padding: 3rem 0 4rem 0;
+  background-image: url("../assets/images/presentation.jpg");
   background-repeat: no-repeat;
   background-size: 1140px;
   background-position: 6px;
@@ -1928,10 +1968,6 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   margin: 0;
   margin-bottom: 0.2rem;
   color: #fff;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 3.6rem;
-  font-weight: bold;
-  font-style: italic;
   line-height: 4rem;
 }
 .presentation-banner__txt p {

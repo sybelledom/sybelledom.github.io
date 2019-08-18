@@ -46,12 +46,20 @@ $line-height-base: 1.6rem !default; //16px = 1.6rem
   font-weight: bold;
   color: $greys-steel-light;
 }
+.bodyLarge {
+  line-height: 2.4rem;
+  font-size: $body-large;
+  font-family: $font-family-base;
+}
 .bodyMedium {
   line-height: 2.4rem;
   font-size: $body-medium;
   font-family: $font-family-base;
 }
 
-.displayMedium, .heading {
+.displayMedium,
+.heading,
+.bodyLarge,
+.bodyMedium {
   margin: 0;
 }
