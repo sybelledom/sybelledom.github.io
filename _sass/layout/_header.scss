@@ -10,7 +10,7 @@
   flex: 1 1 0%;
   flex-wrap: wrap;
   width: 100%;
-  max-height: 15.2rem;
+  max-height: 11.2rem;
   margin: 0 auto;
   border-bottom: 1px solid $primary-light;
   background-color: #fff;
@@ -24,10 +24,12 @@
     text-align: center;
     ul {
       width: 115.2rem;
-      height: 3.2rem; // FIX find out why it is necessary to formally fix the height otherwise the intrinsic height takes 0.5px more @info UL is a block level tag @see http://htmlhelp.com/reference/html40/block.html
       margin: 0 auto;
       padding: 0 0.6rem;
       text-align: right;
+      li {
+        height: 3.2rem; // FIX find out why it is necessary to formally fix the height otherwise the intrinsic height takes 0.5px more @info UL is a block level tag @see http://htmlhelp.com/reference/html40/block.html
+      }
     }
     a {
       font-size: $caption;

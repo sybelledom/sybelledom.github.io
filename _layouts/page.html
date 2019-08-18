@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<div class="container">
 
-    {{ content }}
-
-</div>
+{%- comment -%} main tag is inserted by the default layout. We can add id by
+page we can instantiate one id per pages by creating a layout like the one per
+page. ex:
+<div id="accueil">{{ content }}</div>
+→ _layouts/accueil[.html||.md] {%- endcomment -%}
+{{ content }}

@@ -4,112 +4,110 @@ title: Accueil
 permalink: /accueil/
 ---
 
-<div class="container">
-  {% assign fr = site.data.home %}
+{% assign fr = site.data.home %}
 
-  <section class="presentation-banner grid has-gutter-all">
-    <div class="presentation-banner__txt three-quarters">
-      <h1>{{ fr.presentationBanner.title }}</h1>
-      <p>
-        {{ fr.presentationBanner.text }}
-      </p>
-    </div>
-    <div class="presentation-banner__cover one-quartes">
-      <img
-        src="{{ '/assets/images/CouvSybelle_' }}{{
-          fr.presentationBanner.cat_date
-        }}{{ '.jpg' }}{{ relative_url }}"
-        alt="{{ fr.presentationBanner.alt_cat }}"
-      />
-    </div>
-  </section>
+<section class="presentation-banner grid has-gutter-all">
+  <div class="presentation-banner__txt three-quarters">
+    <h1>{{ fr.presentationBanner.title }}</h1>
+    <p>
+      {{ fr.presentationBanner.text }}
+    </p>
+  </div>
+  <div class="presentation-banner__cover one-quartes">
+    <img
+      src="{{ '/assets/images/CouvSybelle_' }}{{
+        fr.presentationBanner.cat_date
+      }}{{ '.jpg' }}{{ relative_url }}"
+      alt="{{ fr.presentationBanner.alt_cat }}"
+    />
+  </div>
+</section>
 
-  <section class="produits grid">
-    <div class="produits__gamme">
-      <img
-        class="produits__gamme--hero"
-        src="{{ '/assets/images/home_produits.jpg' | relative_url }}"
-        alt="{{ fr.produits.gamme.alt_imgProduits }}"
-      />
-      <h1 class="produits__game produits__title">
-        {{ fr.produits.gamme.title }}
-      </h1>
-      <h2 class="produits__game produits__sub-title">
-        {{ fr.produits.gamme.subTitle }}
-      </h2>
-      <p class="produits__text">{{ fr.produits.gamme.text }}</p>
-      <div class="produits__bio">
-        <div>
-          <img
-            src="{{ '/assets/images/home_logo-bio.jpg' | relative_url }}"
-            alt="{{ fr.produits.gamme.alt_bio }}"
-          />
-        </div>
-        <p>{{ fr.produits.gamme.bio }}</p>
-      </div>
-      <div class="produits__made-in">
-        <div>
-          <img
-            src="{{ '/assets/images/home_made-in-France.jpg' | relative_url }}"
-            alt="{{ fr.produits.gamme.alt_madeinfrance }}"
-          />
-        </div>
-        <p>{{ fr.produits.gamme.madeInFrance }}</p>
-      </div>
-    </div>
-
-    <div class="produits__compo">
-      <img
-        class="produits__compo--hero"
-        src="{{ '/assets/images/home_produits-compo.jpg' | relative_url }}"
-        alt="{{ fr.produits.gamme.alt_img_compo }}"
-      />
-      <div class="produits__compo produits__block">
-        <h1 class="produits__title">{{ fr.produits.compo.title }}</h1>
-        <h2 class="produits__sub-title">{{ fr.produits.compo.subTitle }}</h2>
-        <a
-          class="produits__compo produits__btn"
-          href="{{ './ingredients' | relative_url }}"
-          >{{ fr.produits.compo.btn }}</a
-        >
-      </div>
-    </div>
-  </section>
-
-  <section class="who-are-we">
-    <div class="who-are-we__section1">
+<section class="produits grid">
+  <div class="produits__gamme">
+    <img
+      class="produits__gamme--hero"
+      src="{{ '/assets/images/home_produits.jpg' | relative_url }}"
+      alt="{{ fr.produits.gamme.alt_imgProduits }}"
+    />
+    <h1 class="produits__game produits__title">
+      {{ fr.produits.gamme.title }}
+    </h1>
+    <h2 class="produits__game produits__sub-title">
+      {{ fr.produits.gamme.subTitle }}
+    </h2>
+    <p class="produits__text">{{ fr.produits.gamme.text }}</p>
+    <div class="produits__bio">
       <div>
         <img
-          src="{{ '/assets/images/home_who-are-we.jpg' | relative_url }}"
-          alt="{{ fr.produits.whoAreWe.txt_alt_ambassadrices }}"
+          src="{{ '/assets/images/home_logo-bio.jpg' | relative_url }}"
+          alt="{{ fr.produits.gamme.alt_bio }}"
         />
       </div>
-      <div class="who-are-we__blocktext">
-        <h1 class="who-are-we__title">{{ fr.produits.whoAreWe.title }}</h1>
-        <p class="who-are-we__text">{{ fr.produits.whoAreWe.text }}</p>
-        <ul class="who-are-we__text">
-          <li>{{ fr.produits.whoAreWe.list[0] }}</li>
-          <li>{{ fr.produits.whoAreWe.list[1] }}</li>
-          <li>{{ fr.produits.whoAreWe.list[2] }}</li>
-        </ul>
-      </div>
+      <p>{{ fr.produits.gamme.bio }}</p>
     </div>
-    <div class="who-are-we__section2">
-      <p>
-        {{ fr.produits.whoAreWe.text_2 }}
-        <img
-          src="{{
-            '/assets/images/home_who-are-we-signatures.png' | relative_url
-          }}"
-          alt="{{ fr.produits.whoAreWe.txt_alt_signatures }}"
-        />
-      </p>
+    <div class="produits__made-in">
       <div>
         <img
-          src="{{ '/assets/images/home_who-are-we-gift.jpg' | relative_url }}"
-          alt="{{ fr.produits.whoAreWe.txt_alt_coffret }}"
+          src="{{ '/assets/images/home_made-in-France.jpg' | relative_url }}"
+          alt="{{ fr.produits.gamme.alt_madeinfrance }}"
         />
       </div>
+      <p>{{ fr.produits.gamme.madeInFrance }}</p>
     </div>
-  </section>
-</div>
+  </div>
+
+  <div class="produits__compo">
+    <img
+      class="produits__compo--hero"
+      src="{{ '/assets/images/home_produits-compo.jpg' | relative_url }}"
+      alt="{{ fr.produits.gamme.alt_img_compo }}"
+    />
+    <div class="produits__compo produits__block">
+      <h1 class="produits__title">{{ fr.produits.compo.title }}</h1>
+      <h2 class="produits__sub-title">{{ fr.produits.compo.subTitle }}</h2>
+      <a
+        class="produits__compo produits__btn"
+        href="{{ './ingredients' | relative_url }}"
+        >{{ fr.produits.compo.btn }}</a
+      >
+    </div>
+  </div>
+</section>
+
+<section class="who-are-we">
+  <div class="who-are-we__section1">
+    <div>
+      <img
+        src="{{ '/assets/images/home_who-are-we.jpg' | relative_url }}"
+        alt="{{ fr.produits.whoAreWe.txt_alt_ambassadrices }}"
+      />
+    </div>
+    <div class="who-are-we__blocktext">
+      <h1 class="who-are-we__title">{{ fr.produits.whoAreWe.title }}</h1>
+      <p class="who-are-we__text">{{ fr.produits.whoAreWe.text }}</p>
+      <ul class="who-are-we__text">
+        <li>{{ fr.produits.whoAreWe.list[0] }}</li>
+        <li>{{ fr.produits.whoAreWe.list[1] }}</li>
+        <li>{{ fr.produits.whoAreWe.list[2] }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="who-are-we__section2">
+    <p>
+      {{ fr.produits.whoAreWe.text_2 }}
+      <img
+        src="{{
+          '/assets/images/home_who-are-we-signatures.png' | relative_url
+        }}"
+        alt="{{ fr.produits.whoAreWe.txt_alt_signatures }}"
+      />
+    </p>
+    <div>
+      <img
+        src="{{ '/assets/images/home_who-are-we-gift.jpg' | relative_url }}"
+        alt="{{ fr.produits.whoAreWe.txt_alt_coffret }}"
+      />
+    </div>
+  </div>
+</section>

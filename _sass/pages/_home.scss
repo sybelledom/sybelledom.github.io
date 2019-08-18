@@ -4,7 +4,7 @@
 
 .presentation-banner {
   margin-top: 4rem;
-  padding: 3rem 0 4rem 0;
+  padding: 3.2rem 0 4rem 0;
   background-image: url('../assets/images/home_presentation.jpg');
   background-repeat: no-repeat;
   background-size: 1140px;
@@ -13,13 +13,10 @@
     padding-left: 28.8rem;
     h1 {
       margin: 0;
-      margin-bottom: 0.2rem;
       color: $white;
-      font-family: $font-family-headings;
-      font-size: $display-medium;
-      font-weight: bold;
-      font-style: italic;
-      line-height: 4rem;
+      @extend .displayMedium;
+      // FIX coup de canif dans le contrat 8pt sys car fz:3.6 qui n'est pas un multiple de 8 donc décalage de 4px (36 - 32 = 4).
+      line-height: $display-medium;
     }
     p {
       margin: 0;
