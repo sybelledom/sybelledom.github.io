@@ -1540,12 +1540,14 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   line-height: 3.2rem;
   align-items: center;
   background-image: linear-gradient(91deg, #fff0f0, #fff9f9);
-  text-align: right;
+  text-align: center;
 }
 .header__topbar ul {
-  max-width: 115.2rem;
+  width: 115.2rem;
+  height: 3.2rem;
   margin: 0 auto;
   padding: 0 0.6rem;
+  text-align: right;
 }
 .header__topbar a {
   font-size: 1.2rem;
@@ -1816,6 +1818,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 
 .who-are-we {
   margin: 4rem 0;
+  padding: 0 0.6rem;
   background-image: linear-gradient(135deg, #FFF0F0 0%, #FFF9F9 100%);
   border-radius: 8px;
 }
@@ -1839,6 +1842,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .who-are-we__blocktext {
   max-width: 66rem;
   padding-right: 1.6rem;
+  padding-left: 1.6rem;
 }
 .who-are-we__section2 {
   display: flex;

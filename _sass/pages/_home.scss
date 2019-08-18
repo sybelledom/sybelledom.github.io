@@ -153,6 +153,7 @@
 
 .who-are-we {
   margin: 4rem 0;
+  padding: 0 0.6rem;
   background-image: linear-gradient(135deg, #FFF0F0 0%, #FFF9F9 100%);
     border-radius: 8px;
   $self: &;
@@ -175,10 +176,11 @@
       }
     }
   }
-  // FIX bug safari
+  // FIX bug safari (add div to wrap images) @see https://www.alsacreations.com/astuce/lire/1701-images-responsive-flexbox-bug-ratio.html
   &__blocktext {
     max-width: 66rem;
     padding-right: 1.6rem;
+    padding-left: 1.6rem;
   }
   &__section2{
     display: flex;
