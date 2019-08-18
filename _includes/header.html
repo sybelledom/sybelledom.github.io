@@ -17,7 +17,8 @@
     <nav class="header__nav" role="navigation">
       <ul class="right hide-on-med-and-down">
         {% for item in site.pages %} {% if item.url != '/assets/main.css' and
-        item.url != '/404.html' and item.url != '/feed.xml' %}
+        item.url != '/404.html' and item.url != '/feed.xml' and item.url !=
+        '/mentions/' and item.url != '/cgv/' %}
         <li>
           <a href="{{ item.url | relative_url }}">
             {{ item.title }}

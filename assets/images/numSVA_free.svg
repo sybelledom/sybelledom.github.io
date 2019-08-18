@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="236" height="32">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="233" height="32" fill="#FFF" rx="6"/>
+    <path fill="#666" d="M116 0h114a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H116V0z"/>
+    <text fill="#FFF" font-family="Arial-BoldMT, Arial" font-size="11" font-weight="bold">
+      <tspan x="131" y="14">Service gratuit </tspan> <tspan x="131" y="26">+ prix appel</tspan>
+    </text>
+    <path fill="#FFF" d="M126 16.5L115 26V7z"/>
+    <text fill="#666" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold">
+      <tspan x="8" y="21">0 970 820 547</tspan>
+    </text>
+  </g>
+</svg>

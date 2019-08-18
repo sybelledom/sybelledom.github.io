@@ -3,13 +3,14 @@
 /* ----------------------------- */
 
 body {
+  // TOFIX center global without marge in small
+  min-width: 100vh;
   min-height: 100vh;
   background-color: #eee;
 
   /* Use container for the standard */
   .container-flat {
     width: 100%;
-    overflow: hidden;
     background-color: #fff;
   }
 

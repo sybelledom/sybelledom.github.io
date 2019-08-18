@@ -1,0 +1,45 @@
+// override .container global definition
+// selector weight: 20 (class = 10 * 2 = 20)
+.container.legal {
+  padding: 0 0.6rem;
+}
+
+.legal {
+  // base styles @see _mentions.scss
+  b {
+    color: #c70000;
+  }
+
+  a {
+    color: $greys-steel-light;
+    text-decoration: underline;
+  }
+
+  [class^="zone1_"] {
+    padding-right: 4.8rem;
+    padding-left: 3.8rem;
+
+  }
+  .zone1_para1 {
+    margin-top: 5.6rem;
+  }
+  .zone1_para2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-radius: 0.8rem;
+  }
+  #sva {
+    margin-left: 1rem;
+    border: 1px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+  }
+  .strong {
+    font-weight: bold;
+  }
+
+  .zone1_para2 {
+    border: 1px solid $primary-dark;
+  }
+
+}
