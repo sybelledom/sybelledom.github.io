@@ -18,7 +18,7 @@
       <ul class="right hide-on-med-and-down">
         {% for item in site.pages %} {% if item.url != '/assets/main.css' and
         item.url != '/404.html' and item.url != '/feed.xml' and item.url !=
-        '/mentions/' and item.url != '/cgv/' %}
+        '/mentions/' and item.url != '/cgv/' and item.url != 'index.html' %}
         <li>
           <a href="{{ item.url | relative_url }}">
             {{ item.title }}

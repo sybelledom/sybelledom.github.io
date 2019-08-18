@@ -1438,16 +1438,23 @@ a:hover, a:active, a:focus {
 /* ==Global Micro Layout         */
 /* ----------------------------- */
 body {
-  min-width: 100vh;
   min-height: 100vh;
   background-color: #eee;
-  /* Use container for the standard */
 }
-body .container-flat {
+
+/* Use container for the standard */
+.container-flat {
   width: 100%;
+  min-width: 115.4rem;
   background-color: #fff;
 }
-body .container {
+
+.container-full {
+  min-width: 100%;
+  background-color: #fff;
+}
+
+.container {
   width: 1152px;
   margin: auto;
   padding: 0;
@@ -1550,6 +1557,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   flex: 1 1 0%;
   flex-wrap: wrap;
   width: 100%;
+  min-width: 115.4rem;
   max-height: 11.2rem;
   margin: 0 auto;
   border-bottom: 1px solid #fff1f2;
@@ -1557,6 +1565,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .header__topbar {
   width: 100%;
+  min-width: 115.4rem;
   height: 3.2rem;
   line-height: 3.2rem;
   align-items: center;

@@ -4,23 +4,28 @@
 
 body {
   // TOFIX center global without marge in small
-  min-width: 100vh;
+  // min-width: 100vw;
   min-height: 100vh;
   background-color: #eee;
 
-  /* Use container for the standard */
-  .container-flat {
-    width: 100%;
-    background-color: #fff;
-  }
+}
+/* Use container for the standard */
+.container-flat {
+  width: 100%;
+  min-width: 115.4rem;
+  background-color: #fff;
+}
+.container-full {
+  min-width: 100%;
+  background-color: #fff;
+}
 
-  // modif @manuel
-  .container {
-    width: 1152px;
-    margin: auto;
-    // padding: 0 6px; // fix to use Bootstrap GRID @manu 07/08/19
-    padding: 0; // fix to use Bootstrap GRID
-  }
+// modif @manuel
+.container {
+  width: 1152px;
+  margin: auto;
+  // padding: 0 6px; // fix to use Bootstrap GRID @manu 07/08/19
+  padding: 0; // fix to use Bootstrap GRID
 }
 
 /* Flexbox layout is KNACSS choice
