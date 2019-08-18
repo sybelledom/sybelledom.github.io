@@ -1,6 +1,27 @@
-#_1012103, #_1012103 > td {
+.activline, .activline > td {
   border: solid 3px whitesmoke;
   background-color: #eee !important;
+}
+
+.mdr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.6rem;
+}
+button {
+  background: none;
+  border: none;
+}
+input {
+  width: 27.8rem;
+  height: 4rem;
+  padding-left: 0.8rem;
+  border: 1px solid #979797;
+  border-radius: 0.8rem;
+  font-size: $heading;
+  line-height: $heading;
+  // &::placeholder {
+  // }
 }
 
 .ingredients-array {
