@@ -5,7 +5,6 @@ const navList = Array.from(document.querySelectorAll('.header__nav a'))
 navList[0].classList.toggle('actif')
 
 console.log(navList)
-<<<<<<< HEAD
 
 function go_id(params) {
   // window.location === 'http://localhost:4000/ingredients/'
@@ -17,5 +16,3 @@ function go_id(params) {
   window.location =
     window.location + 'index.html#_' + document.getElementById('ref').value
 }
-=======
->>>>>>> update to github-pages

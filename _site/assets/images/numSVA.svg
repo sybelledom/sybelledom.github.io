@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" width="236" height="32">
   <g fill="none" fill-rule="evenodd">
     <rect width="233" height="32" fill="#FFF" rx="6"/>
@@ -12,6 +11,3 @@
     </text>
   </g>
 </svg>
-=======
-<svg width="236" height="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#FFF" width="233" height="32" rx="6"/><path d="M116 0h114a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H116V0z" fill="#AF007D"/><text font-family="Arial-BoldMT, Arial" font-size="11" font-weight="bold" fill="#FFF"><tspan x="131" y="14">Service 0.50€ / min </tspan> <tspan x="131" y="26">+ prix appel</tspan></text><path fill="#FFF" d="M126 16.5L115 26V7z"/><text font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#AF007D"><tspan x="8" y="21">0 892 065 065</tspan></text></g></svg>
->>>>>>> update to github-pages

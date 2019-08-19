@@ -28,11 +28,13 @@
     padding-bottom: 4rem;
     border-radius: 0.8rem;
   }
-  #sva {
-    margin-left: 1rem;
+  .sva {
     border: 1px;
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+    &.ml8 {
+      margin-left: 0.8rem;
+    }
   }
   .strong {
     font-weight: bold;

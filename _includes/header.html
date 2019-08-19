@@ -16,15 +16,26 @@
     </h1>
     <nav class="header__nav" role="navigation">
       <ul class="right hide-on-med-and-down">
-        {% for item in site.pages %} {% if item.url != '/assets/main.css' and
-        item.url != '/404.html' and item.url != '/feed.xml' and item.url !=
-        '/mentions/' and item.url != '/cgv/' and item.url != 'index.html' %}
+        {%- comment -%} {% for item in site.pages %} {% if item.url !=
+        '/assets/main.css' and item.url != '/404.html' and item.url !=
+        '/feed.xml' and item.url != '/mentions/' and item.url != '/cgv/' and
+        item.url != 'index.html' %}
         <li>
           <a href="{{ item.url | relative_url }}">
             {{ item.title }}
           </a>
         </li>
-        {%endif%} {%endfor%}
+        {%endif%} {%endfor%} {%- endcomment -%}
+        <li>
+          <a href="/">
+            Accueil
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/ingredients/' | relative_url }}">
+            Ingrédients
+          </a>
+        </li>
       </ul>
     </nav>
   </div>

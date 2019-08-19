@@ -1337,7 +1337,6 @@ template {
   color: #fff;
 }
 
-<<<<<<< HEAD
 .displayMedium, .presentation-banner__txt h1, .produits__title, .who-are-we__title, .legal__title {
   line-height: 4rem;
   font-size: 3.6rem;
@@ -1387,8 +1386,6 @@ template {
   margin: 0;
 }
 
-=======
->>>>>>> update to github-pages
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1443,7 +1440,6 @@ a:hover, a:active, a:focus {
 body {
   min-height: 100vh;
   background-color: #eee;
-<<<<<<< HEAD
 }
 
 /* Use container for the standard */
@@ -1459,17 +1455,6 @@ body {
 }
 
 .container {
-=======
-  display: flex;
-  flex-direction: column;
-  /* Use container for the standard */
-}
-body .container-flat {
-  width: 100%;
-  background-color: #fff;
-}
-body .container {
->>>>>>> update to github-pages
   width: 1152px;
   margin: auto;
   padding: 0;
@@ -1572,27 +1557,19 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   flex: 1 1 0%;
   flex-wrap: wrap;
   width: 100%;
-<<<<<<< HEAD
   min-width: 115.4rem;
   max-height: 11.2rem;
-=======
-  max-height: 15.2rem;
->>>>>>> update to github-pages
   margin: 0 auto;
   border-bottom: 1px solid #fff1f2;
   background-color: #fff;
 }
 .header__topbar {
   width: 100%;
-<<<<<<< HEAD
   min-width: 115.4rem;
-=======
->>>>>>> update to github-pages
   height: 3.2rem;
   line-height: 3.2rem;
   align-items: center;
   background-image: linear-gradient(91deg, #fff0f0, #fff9f9);
-<<<<<<< HEAD
   text-align: center;
 }
 .header__topbar ul {
@@ -1603,14 +1580,6 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .header__topbar ul li {
   height: 3.2rem;
-=======
-  text-align: right;
-}
-.header__topbar ul {
-  max-width: 115.2rem;
-  margin: 0 auto;
-  padding: 0 0.6rem;
->>>>>>> update to github-pages
 }
 .header__topbar a {
   font-size: 1.2rem;
@@ -1666,6 +1635,9 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .header__nav ul a:hover, .header__nav ul a.actif {
   color: #fff;
   background-color: #F55691;
+}
+.header__nav ul li:last-child a {
+  margin-right: 0;
 }
 
 .footer {
@@ -1750,8 +1722,8 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .footer__copyright ul li a {
   display: inline-block;
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
   color: #fff;
 }
 .footer__copyright ul li:nth-child(0n+1):after, .footer__copyright ul li:nth-child(0n+2):after {
@@ -1762,13 +1734,8 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 
 .presentation-banner {
   margin-top: 4rem;
-<<<<<<< HEAD
   padding: 3.2rem 0 4rem 0;
   background-image: url("../assets/images/home_presentation.jpg");
-=======
-  padding: 3rem 0 4rem 0;
-  background-image: url("../assets/images/presentation.jpg");
->>>>>>> update to github-pages
   background-repeat: no-repeat;
   background-size: 1140px;
   background-position: 6px;
@@ -1778,18 +1745,8 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .presentation-banner__txt h1 {
   margin: 0;
-<<<<<<< HEAD
   color: #fff;
   line-height: 3.6rem;
-=======
-  margin-bottom: 0.2rem;
-  color: #fff;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 3.6rem;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 4rem;
->>>>>>> update to github-pages
 }
 .presentation-banner__txt p {
   margin: 0;
@@ -1805,7 +1762,6 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   transform: rotate(6deg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
-<<<<<<< HEAD
 
 .produits {
   margin-top: 4rem;
@@ -2054,11 +2010,13 @@ input {
   padding-bottom: 4rem;
   border-radius: 0.8rem;
 }
-.legal #sva {
-  margin-left: 1rem;
+.legal .sva {
   border: 1px;
   border-radius: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+}
+.legal .sva.ml8 {
+  margin-left: 0.8rem;
 }
 .legal .strong {
   font-weight: bold;
@@ -2066,5 +2024,3 @@ input {
 .legal .zone1_para2 {
   border: 1px solid #dd0065;
 }
-=======
->>>>>>> update to github-pages

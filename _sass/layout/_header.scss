@@ -94,6 +94,9 @@
           background-color: $primary-regular;
         }
       }
+      li:last-child a {
+        margin-right: 0;
+      }
     }
   }
 }
