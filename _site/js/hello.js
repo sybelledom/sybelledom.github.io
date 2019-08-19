@@ -25,14 +25,15 @@ function isPresent (arg, ref) {
 
 function refInputKey (e) {
   console.log(e.key)
+  ref_ += e.key
+  console.log(ref_)
   if (isFinite(e.key) || e.key == 'Enter') {
-    ref_ += e.key
     if (ref_.length === 7) {
-      console.log(ref_)
       isPresent(allRefNorm, ref_)
+      ref_ = ''
     }
   } else {
-    alert('Oups juste 7 chiffres')
+    alert('Oups juste des chiffres :)')
   }
 }
 
