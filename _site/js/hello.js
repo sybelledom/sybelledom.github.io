@@ -8,7 +8,8 @@ document.addEventListener('keypress', refInputKey);
 
 function isPresent(arg, ref) {
   arg.map(i => {
-    return i.innerHTML === ref ? console.log(i) : console.log('pas là');
+    console.log(normalizSpace(i.innerHTML));
+    // return i.innerHTML === ref ? console.log(i) : console.log('pas là');
   });
 }
 
