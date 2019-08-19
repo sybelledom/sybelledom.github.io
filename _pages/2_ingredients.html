@@ -8,8 +8,8 @@ permalink: /ingredients/index.html
 
 <div class="container">
   <div class="mdr">
-    <input type="text" id="ref" placeholder="entrez votre ref" />
-    <button onclick="go_id()">
+    <input type="text" id="ref" placeholder="entrez vos 7 chiffres" />
+    <button id="gotoref" onclick="go_id()">
       <img src="{{ '/assets/images/mdr.svg' | relative_url }}" alt="" />
     </button>
   </div>
@@ -33,4 +33,6 @@ permalink: /ingredients/index.html
     </tr>
     {% endfor %}
   </table>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </div>
