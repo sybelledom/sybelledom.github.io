@@ -8,8 +8,12 @@ document.addEventListener('keypress', refInputKey);
 
 function isPresent(arg, ref) {
   arg.map(i => {
-    console.log(normalizSpace(i.innerHTML));
-    // return i.innerHTML === ref ? console.log(i) : console.log('pas là');
+    // return normalizSpace(i.innerHTML) === ref
+    //   ? alert('yolo')
+    //   : alert('pas de ref');
+    if (normalizSpace(i.innerHTML) === ref) {
+      alert('Ok ref');
+    }
   });
 }
 
@@ -19,9 +23,9 @@ function refInputKey(e) {
     ref_ += e.key;
     if (ref_.length === 7) {
       console.log(ref_);
+      isPresent(allRef, ref_);
       go_id(ref_);
       document.getElementById('gotoref').classList.add('mdr_ok');
-      isPresent(allRef, ref_);
       // if (allRef.includes(ref_)) {
       // } else {
       //   alert("Oups votre ref n'est pas valide");
