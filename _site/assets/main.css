@@ -905,8 +905,8 @@ template {
     width: calc(100% / 1 - 0px);
   }
   [class*="-small-1"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-1"].has-gutter > * {
     width: calc(100% / 1 - 0.8rem - 0px);
@@ -918,8 +918,8 @@ template {
     width: calc(100% / 2 - 0px);
   }
   [class*="-small-2"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-2"].has-gutter > * {
     width: calc(100% / 2 - 0.8rem - 0px);
@@ -931,8 +931,8 @@ template {
     width: calc(100% / 3 - 0px);
   }
   [class*="-small-3"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-3"].has-gutter > * {
     width: calc(100% / 3 - 0.8rem - 0px);
@@ -944,8 +944,8 @@ template {
     width: calc(100% / 4 - 0px);
   }
   [class*="-small-4"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-4"].has-gutter > * {
     width: calc(100% / 4 - 0.8rem - 0px);
@@ -957,8 +957,8 @@ template {
     width: calc(100% / 5 - 0px);
   }
   [class*="-small-5"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-5"].has-gutter > * {
     width: calc(100% / 5 - 0.8rem - 0px);
@@ -970,8 +970,8 @@ template {
     width: calc(100% / 6 - 0px);
   }
   [class*="-small-6"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-6"].has-gutter > * {
     width: calc(100% / 6 - 0.8rem - 0px);
@@ -983,8 +983,8 @@ template {
     width: calc(100% / 7 - 0px);
   }
   [class*="-small-7"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-7"].has-gutter > * {
     width: calc(100% / 7 - 0.8rem - 0px);
@@ -996,8 +996,8 @@ template {
     width: calc(100% / 8 - 0px);
   }
   [class*="-small-8"].has-gutter {
-    margin-right: -0.8rem / 2;
-    margin-left: -0.8rem / 2;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
   }
   [class*="-small-8"].has-gutter > * {
     width: calc(100% / 8 - 0.8rem - 0px);
@@ -1899,7 +1899,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 
 .activline, .activline > td {
   border: solid 3px whitesmoke;
-  background-color: #eee !important;
+  background-color: rgba(255, 230, 0, 0.32) !important;
 }
 
 .mdr {

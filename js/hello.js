@@ -1,18 +1,21 @@
-console.log('hello you ❤️')
-
-const navList = Array.from(document.querySelectorAll('.header__nav a'))
-
-navList[0].classList.toggle('actif')
-
-console.log(navList)
+// document.getElementById('ref').value != '' ? const id = document.getElementById('ref').value : alert('rentrez une ref!')
 
 function go_id(params) {
-  // window.location === 'http://localhost:4000/ingredients/'
-  //   ? console.log('ok')
-  //   : (window.location = 'http://localhost:4000/ingredients/')
-  var id = document.getElementById('ref').value
-  console.log(id)
-  document.getElementById(`_${id}`).classList.add('activline')
-  window.location =
-    window.location + 'index.html#_' + document.getElementById('ref').value
+  if (document.getElementById('ref').value !== '') {
+    const id = document.getElementById('ref').value;
+  } else {
+    alert('rentrez une ref!');
+  }
+
+  const test = (window.location =
+    window.location.protocol +
+    '//' +
+    window.location.host +
+    '/ingredients/index.html' +
+    '#_' +
+    document.getElementById('ref').value);
+
+  console.log(`test: ${test}`);
+
+  document.getElementById(`_${id}`).classList.add('activline');
 }
