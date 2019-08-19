@@ -1,46 +1,46 @@
 // traitement saisie interdiction lettre
-const refInput = document.getElementById('ref');
-let ref_ = '';
-const allRef = [...document.querySelectorAll('tr td:first-child')];
+const refInput = document.getElementById('ref')
+let ref_ = ''
+const allRef = [...document.querySelectorAll('tr td:first-child')]
+const allRefNorm = allRef.map(i => normalizSpace(i.innerHTML))
 
 // add keypress listener
-document.addEventListener('keypress', refInputKey);
-
-function isPresent(arg, ref) {
-  arg.map(i => {
-    // return normalizSpace(i.innerHTML) === ref
-    //   ? alert('yolo')
-    //   : alert('pas de ref');
-    if (normalizSpace(i.innerHTML) === ref) {
-      alert('Ok ref');
-    }
-  });
-}
-
-function refInputKey(e) {
-  console.log(e.key);
-  if (isFinite(e.key) || e.key == 'Enter') {
-    ref_ += e.key;
-    if (ref_.length === 7) {
-      console.log(ref_);
-      isPresent(allRef, ref_);
-      go_id(ref_);
-      document.getElementById('gotoref').classList.add('mdr_ok');
-      // if (allRef.includes(ref_)) {
-      // } else {
-      //   alert("Oups votre ref n'est pas valide");
-      // }
-    }
+document.addEventListener('keypress', refInputKey)
+console.log(allRefNorm)
+function isPresent (arg, ref) {
+  console.log(`isPresent dit ref: ${ref}, ça vaut ${arg.includes(ref)}?`)
+  if (arg.includes(ref)) {
+    console.log(`ref: ${ref} existe`)
+    go_id(ref_)
+    document.getElementById('gotoref').classList.add('mdr_ok')
   } else {
-    alert('Oups juste 7 chiffres');
+    alert("votre référence n'est pas valide.")
+    window.location =
+      window.location.protocol +
+      '//' +
+      window.location.host +
+      '/ingredients/index.html'
   }
 }
 
-function normalizSpace(string) {
-  return string.replace(/[\n\r\s\t]+/g, '');
+function refInputKey (e) {
+  console.log(e.key)
+  if (isFinite(e.key) || e.key == 'Enter') {
+    ref_ += e.key
+    if (ref_.length === 7) {
+      console.log(ref_)
+      isPresent(allRefNorm, ref_)
+    }
+  } else {
+    alert('Oups juste 7 chiffres')
+  }
 }
 
-function go_id(params) {
+function normalizSpace (string) {
+  return string.replace(/[\n\r\s\t]+/g, '')
+}
+
+function go_id (params) {
   if (params) {
     window.location =
       window.location.protocol +
@@ -48,46 +48,46 @@ function go_id(params) {
       window.location.host +
       '/ingredients/index.html' +
       '#_' +
-      params;
-    document.getElementById(`_${params}`).classList.toggle('activline');
+      params
+    document.getElementById(`_${params}`).classList.add('activline')
   }
 }
 
 // gestion click btn
-document.getElementById('gotoref').addEventListener('click', function(params) {
+document.getElementById('gotoref').addEventListener('click', function (params) {
   if (document.getElementById('ref').value !== '') {
-    let id = document.getElementById('ref').value;
-    id = normalizSpace(id);
+    let id = document.getElementById('ref').value
+    id = normalizSpace(id)
     const test = (window.location =
       window.location.protocol +
       '//' +
       window.location.host +
       '/ingredients/index.html' +
       '#_' +
-      id);
+      id)
 
-    console.log(`id:${id}`);
+    console.log(`id:${id}`)
 
-    document.getElementById(`_${id}`).classList.toggle('activline');
+    document.getElementById(`_${id}`).classList.toggle('activline')
   }
-});
+})
 
 // BUTTON RETURN ON TOP
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-  scrollFunction();
-};
+window.onscroll = function () {
+  scrollFunction()
+}
 
-function scrollFunction() {
+function scrollFunction () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('myBtn').style.display = 'block';
+    document.getElementById('myBtn').style.display = 'block'
   } else {
-    document.getElementById('myBtn').style.display = 'none';
+    document.getElementById('myBtn').style.display = 'none'
   }
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+function topFunction () {
+  document.body.scrollTop = 0 // For Safari
+  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
