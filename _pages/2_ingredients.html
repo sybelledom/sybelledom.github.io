@@ -1,12 +1,18 @@
 ---
-layout: page
+layout: default_
 title: Ingrédients
 permalink: /ingredients/index.html
 ---
 
+{%- comment -%}
 <h1 class="page-title">{{ page.title | escape }}</h1>
+{%- endcomment -%}
 
 <div class="container">
+  <p class="text-mdr">
+    Pour connaître la composition d’un produit,<br />
+    veuillez entrer la référence du produit concerné ci-dessous :
+  </p>
   <div class="mdr">
     <input type="text" id="ref" placeholder="entrez vos 7 chiffres" />
     <button id="gotoref" onclick="go_id()">

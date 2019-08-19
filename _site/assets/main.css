@@ -1360,7 +1360,7 @@ template {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p, .ingredients-array th, .ingredients-array td:nth-child(0n+1),
+.bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p, .text-mdr, .ingredients-array th, .ingredients-array td:nth-child(0n+1),
 .ingredients-array td:nth-child(0n+2) {
   line-height: 2.4rem;
   font-size: 1.6rem;
@@ -1380,6 +1380,7 @@ template {
 .produits__made-in p,
 .who-are-we__text,
 .who-are-we__section2 p,
+.text-mdr,
 .ingredients-array th,
 .ingredients-array td:nth-child(0n+1),
 .ingredients-array td:nth-child(0n+2) {
@@ -1560,8 +1561,13 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
   min-width: 115.4rem;
   max-height: 11.2rem;
   margin: 0 auto;
-  border-bottom: 1px solid #fff1f2;
   background-color: #fff;
+}
+.header::after {
+  border: 0.05rem solid #fff1f2;
+  height: 0.1rem;
+  content: '';
+  width: 100%;
 }
 .header__topbar {
   width: 100%;
@@ -1638,6 +1644,10 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 }
 .header__nav ul li:last-child a {
   margin-right: 0;
+}
+.header__deco {
+  width: 20.8rem;
+  margin-left: auto;
 }
 
 .footer {
@@ -1921,6 +1931,13 @@ input {
   border-radius: 0.8rem;
   font-size: 2.4rem;
   line-height: 2.4rem;
+}
+
+.text-mdr {
+  text-align: center;
+  margin-top: 3.6rem;
+  margin-bottom: 3.6rem;
+  color: #333;
 }
 
 .ingredients-array {

@@ -13,7 +13,13 @@
   min-width: 115.4rem;
   max-height: 11.2rem;
   margin: 0 auto;
-  border-bottom: 1px solid $primary-light;
+  // border-bottom: 1px solid $primary-light;
+  &::after{
+    border: 0.05rem solid $primary-light;
+    height: 0.1rem;
+    content: '';
+    width: 100%;
+  }
   background-color: #fff;
 
   &__topbar {
@@ -98,5 +104,9 @@
         margin-right: 0;
       }
     }
+  }
+  &__deco {
+    width: 20.8rem;
+    margin-left: auto;
   }
 }
