@@ -8,7 +8,7 @@ const allRefNorm = allRef.map(i => normalizSpace(i.innerHTML))
 document.addEventListener('keypress', refInputKey)
 console.log(allRefNorm)
 function isPresent (arg, ref) {
-  console.log(`isPresent dit ref: ${ref}, ça vaut ${arg.includes(ref)}?`)
+  // console.log(`isPresent dit ref: ${ref}, ça vaut ${arg.includes(ref)}?`)
   if (arg.includes(ref)) {
     console.log(`ref: ${ref} existe`)
     go_id(ref_)
@@ -59,16 +59,6 @@ document.getElementById('gotoref').addEventListener('click', function (params) {
   if (document.getElementById('ref').value !== '') {
     let id = document.getElementById('ref').value
     id = normalizSpace(id)
-    const test = (window.location =
-      window.location.protocol +
-      '//' +
-      window.location.host +
-      '/ingredients/index.html' +
-      '#_' +
-      id)
-
-    console.log(`id:${id}`)
-
     document.getElementById(`_${id}`).classList.toggle('activline')
   }
 })
