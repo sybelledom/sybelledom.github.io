@@ -6,12 +6,12 @@ const allRefNorm = allRef.map(i => normalizSpace(i.innerHTML));
 
 // add keypress listener
 document.addEventListener('keypress', refInputKey);
-console.log(allRefNorm);
+// console.log(allRefNorm);
 
 function isPresent(arg, ref) {
   // console.log(`isPresent dit ref: ${ref}, ça vaut ${arg.includes(ref)}?`)
   if (arg.includes(ref)) {
-    console.log(`ref: ${ref} existe`);
+    // console.log(`ref: ${ref} existe`);
     go_id(ref_);
   } else {
     alert("votre référence n'est pas valide.");
@@ -24,12 +24,12 @@ function isPresent(arg, ref) {
 }
 
 function refInputKey(e) {
-  e.preventDefault(); // important FIX bug for safari browser
-  console.log(e.key);
+  // console.log(e.key);
   ref_ += e.key;
-  console.log(ref_);
+  // console.log(ref_);
   if (isFinite(e.key) || e.key == 'Enter') {
     if (ref_.length === 7) {
+      e.preventDefault(); // important FIX bug for safari browser
       isPresent(allRefNorm, ref_);
       ref_ = '';
     }

@@ -95,6 +95,7 @@
         font-size: $body-medium;
         line-height: 1.5;
         border-radius: 2.4rem;
+        transition: all 0.4s ease-in-out;
         &:hover, &.actif {
           color: $white;
           background-color: $primary-regular;
