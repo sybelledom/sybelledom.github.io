@@ -15,7 +15,7 @@ permalink: /ingredients/index.html
   </p>
   <div class="mdr">
     <input type="text" id="ref" placeholder="entrez vos 7 chiffres" />
-    <button id="gotoref" onclick="go_id()">
+    <button id="search_btn" onclick="go_id()">
       <img src="{{ '/assets/images/mdr.svg' | relative_url }}" alt="" />
     </button>
   </div>
@@ -26,7 +26,7 @@ permalink: /ingredients/index.html
       <th>Ingrédients / Composition</th>
     </tr>
     {% for elt in site.data.ingredients %}
-    <tr id="_{{ elt.ref }}">
+    <tr id="ref{{ elt.ref }}">
       <td>
         {{ elt.ref }}
       </td>
