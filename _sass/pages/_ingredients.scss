@@ -19,9 +19,11 @@ input {
   border: 1px solid #979797;
   border-radius: 0.8rem;
   font-size: $heading;
-  line-height: $heading;
-  // &::placeholder {
-  // }
+  // line-height: $heading;
+  &::placeholder {
+    @extend .bodyMedium;
+    line-height: calc(4rem - 0.6rem);
+  }
 }
 
 .text-mdr {
@@ -83,7 +85,7 @@ input {
 
 #myBtn {
   @extend .bodyMedium;
-  min-height: 5.6rem;
+  min-height: 4.8rem;
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -94,7 +96,7 @@ input {
   background-color: $primary-dark; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 1.6rem; /* Some padding */
+  padding: 0 1.6rem; /* Some padding */
   border-radius: 0.8rem; /* Rounded corners */
   img {
     margin-right: 0.8rem;
