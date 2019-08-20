@@ -22,7 +22,7 @@ input {
   // line-height: $heading;
   &::placeholder {
     @extend .bodyMedium;
-    line-height: calc(4rem - 0.6rem);
+    line-height: calc(4rem - 1.6rem);
   }
 }
 
