@@ -38,8 +38,8 @@ html {
   line-height: calc(1em * 0.625);
 
   scroll-behavior: smooth;
-  ::-moz-selection { padding:0.8rem; color: $white; background-color: $primary-regular};
-  ::selection { padding:0.8rem; color: $white; background-color: $primary-regular; };
+  ::-moz-selection { color: $white; background-color: $primary-regular};
+  ::selection { color: $white; background-color: $primary-regular; };
 }
 
 /**

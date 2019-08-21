@@ -1427,12 +1427,10 @@ html {
   scroll-behavior: smooth;
 }
 html ::-moz-selection {
-  padding: 0.8rem;
   color: #fff;
   background-color: #F55691;
 }
 html ::selection {
-  padding: 0.8rem;
   color: #fff;
   background-color: #F55691;
 }
