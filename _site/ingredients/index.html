@@ -46,7 +46,7 @@
   <meta content="#ffffff" name="theme-color" />
   <link
     rel="canonical"
-    href="http://localhost:4000/ingredients/"
+    href="http://www.sybelle.fr/ingredients/"
   />
   
 </head>
@@ -57,7 +57,7 @@
 
       <div class="header__topbar">
   <ul>
-    <li><a href="#sva">Besoin d’aide ? Contactez-nous !</a></li>
+    <li><a href="/mentions/">Besoin d’aide ? Contactez-nous !</a></li>
   </ul>
 </div>
 <header class="header">
@@ -89,21 +89,22 @@
 </header>
 
 
-      <main class="container">
-        <ul class="breadcrumb">
-  <li><a href="/accueil/">Accueil ></a></li>
-  <li><a href="">Ingrédients</a></li>
+      <ul class="breadcrumb">
+  <li><a href="/accueil/">Accueil</a></li>
+  <li>Ingrédients</li>
 </ul>
 
-<div class="container">
-  <p class="text-mdr">
+
+      <main class="container">
+        <div class="container">
+  <p class="paragraphes">
      Pour connaître la composition d’un produit,<br /> veuillez entrer la référence du produit concerné ci-dessous : 
   </p>
   <div class="mdr">
     <input
       type="text"
       id="ref"
-      placeholder="Saisir votre référence, sans point :)"
+      placeholder="Rechercher une référence à 7 chiffres."
     />
     <button id="search_btn">
       <img src="/assets/images/mdr.svg" alt="" />
@@ -334,6 +335,10 @@ NATUREL BRILLANT
     </tr>
     
   </table>
+
+  <p class="paragraphes">
+        Selon la réglementation Européenne, la liste des ingrédients peut, éventuellement, être soumise à certaines modifications.<br /> Nous vous conseillons de vous référer à l’emballage du produit pour en connaître la dernière composition.<br /> Un complément alimentaire ne doit pas se substituer à une alimentation variée et équilibrée et à un mode de vie sain.<br /> Ne pas dépasser la dose journalière recommandée.
+  </p>
 
   <button onclick="topFunction()" id="myBtn" title="haut de page">
     <img src="/assets/images/arrow_top.svg" alt="" />

@@ -1360,7 +1360,7 @@ template {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.bodyMedium, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p, input::placeholder, .text-mdr, .ingredients-array th, .ingredients-array td:nth-child(0n+1),
+.bodyMedium, .breadcrumb, .produits__text, .produits__bio p, .produits__made-in p, .who-are-we__text, .who-are-we__section2 p, .paragraphes, .ingredients-array th, .ingredients-array td:nth-child(0n+1),
 .ingredients-array td:nth-child(0n+2), #myBtn {
   line-height: 2.4rem;
   font-size: 1.6rem;
@@ -1375,13 +1375,13 @@ template {
 .legal__subTitle,
 .legal__text,
 .bodyMedium,
+.breadcrumb,
 .produits__text,
 .produits__bio p,
 .produits__made-in p,
 .who-are-we__text,
 .who-are-we__section2 p,
-input::placeholder,
-.text-mdr,
+.paragraphes,
 .ingredients-array th,
 .ingredients-array td:nth-child(0n+1),
 .ingredients-array td:nth-child(0n+2),
@@ -1434,6 +1434,26 @@ a {
   text-decoration: none;
 }
 a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumb {
+  display: flex;
+  max-width: 115.2rem;
+  margin: 0 auto;
+  margin-top: 1.6rem;
+  color: #7b7b7b;
+}
+.breadcrumb a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+.breadcrumb a::after {
+  display: inline-block;
+  content: '>';
+  margin: 0 0.4rem;
+}
+.breadcrumb a:hover {
   text-decoration: underline;
 }
 
@@ -1927,18 +1947,18 @@ button {
 }
 
 input {
-  width: 27.8rem;
+  width: 29.6rem;
   height: 4rem;
   padding-left: 0.8rem;
   border: 1px solid #979797;
   border-radius: 0.8rem;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
-input::placeholder {
-  line-height: calc(4rem - 1.6rem);
+input::-webkit-input-placeholder, input::placeholder, input::placeholder {
+  line-height: 3.6rem;
 }
 
-.text-mdr {
+.paragraphes {
   text-align: center;
   margin-top: 3.6rem;
   margin-bottom: 3.6rem;

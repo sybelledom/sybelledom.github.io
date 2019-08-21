@@ -7,20 +7,16 @@ permalink: /ingredients/index.html
 {%- comment -%}
 <h1 class="page-title">{{ page.title | escape }}</h1>
 {%- endcomment -%}
-<ul class="breadcrumb">
-  <li><a href="/accueil/">Accueil ></a></li>
-  <li><a href="">Ingrédients</a></li>
-</ul>
 
 <div class="container">
-  <p class="text-mdr">
-    {{ site.data.search_engine.paragraphe }}
+  <p class="paragraphes">
+    {{ site.data.ingredients_common.paragraphe_1 }}
   </p>
   <div class="mdr">
     <input
       type="text"
       id="ref"
-      placeholder="{{ site.data.search_engine.placeholder_txt }}"
+      placeholder="{{ site.data.ingredients_common.placeholder_txt }}"
     />
     <button id="search_btn">
       <img src="{{ '/assets/images/mdr.svg' | relative_url }}" alt="" />
@@ -46,6 +42,10 @@ permalink: /ingredients/index.html
     </tr>
     {% endfor %}
   </table>
+
+  <p class="paragraphes">
+    {{ site.data.ingredients_common.paragraphe_2 }}
+  </p>
 
   <button onclick="topFunction()" id="myBtn" title="haut de page">
     <img src="{{ '/assets/images/arrow_top.svg' | relative_url }}" alt="" />

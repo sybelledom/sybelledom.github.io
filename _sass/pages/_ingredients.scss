@@ -3,30 +3,35 @@
   background-color: rgba(255, 230, 0, 0.4) !important;
 }
 
+// search search mdr search_btn
 .mdr {
   display: flex;
   justify-content: center;
   margin-bottom: 4.6rem;
 }
+
 button {
   background: none;
   border: none;
 }
+
 input {
-  width: 27.8rem;
+  width: 29.6rem;
   height: 4rem;
   padding-left: 0.8rem;
   border: 1px solid #979797;
   border-radius: 0.8rem;
-  font-size: $heading;
+  font-size: $body-medium;
   // line-height: $heading;
+  &::-webkit-input-placeholder,
+  &::placeholder,
   &::placeholder {
-    @extend .bodyMedium;
-    line-height: calc(4rem - 1.6rem);
+    line-height: 3.6rem;
+    // @extend .bodyMedium;
   }
 }
 
-.text-mdr {
+.paragraphes {
   @extend .bodyMedium;
   text-align: center;
   margin-top: 3.6rem;
