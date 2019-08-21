@@ -1449,8 +1449,8 @@ a:hover, a:active, a:focus {
   display: flex;
   max-width: 115.2rem;
   margin: 0 auto;
-  margin-top: 1.6rem;
-  margin-left: 0.8rem;
+  padding-top: 1.6rem;
+  padding-left: 0.8rem;
   color: #7b7b7b;
 }
 .breadcrumb a {
