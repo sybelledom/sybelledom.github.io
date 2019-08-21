@@ -23,12 +23,12 @@ input {
   border-radius: 0.8rem;
   font-size: $body-medium;
   // line-height: $heading;
-  &::-webkit-input-placeholder,
-  &::placeholder,
-  &::placeholder {
-    line-height: 3.6rem;
-    // @extend .bodyMedium;
-  }
+  // &::-webkit-input-placeholder,
+  // &::placeholder,
+  // &::placeholder {
+  //   line-height: 3.6rem;
+  //   // @extend .bodyMedium;
+  // }
 }
 
 .paragraphes {

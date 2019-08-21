@@ -1954,9 +1954,6 @@ input {
   border-radius: 0.8rem;
   font-size: 1.6rem;
 }
-input::-webkit-input-placeholder, input::placeholder, input::placeholder {
-  line-height: 3.6rem;
-}
 
 .paragraphes {
   text-align: center;
