@@ -71,6 +71,7 @@ function KeyCheck (event) {
   var KeyID = event.keyCode
   switch (KeyID) {
     case 8:
+      // gérer le cas d'une suppression suite à une selection
       ref_ = ref_.slice(0, -1)
       console.log(`bckspa ref_: ${ref_}`)
       break
