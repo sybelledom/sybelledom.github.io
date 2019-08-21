@@ -103,6 +103,7 @@ input {
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 0 1.6rem; /* Some padding */
   border-radius: 0.8rem; /* Rounded corners */
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
   img {
     margin-right: 0.8rem;
   }
